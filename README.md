@@ -22,7 +22,7 @@ El proyecto está organizado en capas:
 
 - Arquitectura por capas totalmente alineada con la plantilla GTMotive.
 - Uso de **MediatR** para aplicar el patrón Mediator (commands, queries, events).
-- **Dominio rico** con validaciones encapsuladas y servicios de dominio (`RentalDomainService`).
+- **Dominio** con validaciones encapsuladas y servicios de dominio (`RentalDomainService`).
 - Desacoplamiento con eventos de dominio manejados por `IMediator`.
 - **Inyección de dependencias** en todos los niveles con `IServiceCollection`.
 - **Repositorios sobre MongoDB** en la capa `Infrastructure`.
