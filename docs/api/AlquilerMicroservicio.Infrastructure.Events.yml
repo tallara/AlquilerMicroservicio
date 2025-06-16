@@ -1,0 +1,61 @@
+### YamlMime:ManagedReference
+items:
+- uid: AlquilerMicroservicio.Infrastructure.Events
+  commentId: N:AlquilerMicroservicio.Infrastructure.Events
+  id: AlquilerMicroservicio.Infrastructure.Events
+  children:
+  - AlquilerMicroservicio.Infrastructure.Events.DomainEventDispatcher
+  - AlquilerMicroservicio.Infrastructure.Events.IDomainEventDispatcher
+  langs:
+  - csharp
+  - vb
+  name: AlquilerMicroservicio.Infrastructure.Events
+  nameWithType: AlquilerMicroservicio.Infrastructure.Events
+  fullName: AlquilerMicroservicio.Infrastructure.Events
+  type: Namespace
+  assemblies:
+  - AlquilerMicroservicio.Infrastructure
+references:
+- uid: AlquilerMicroservicio.Infrastructure.Events.IDomainEventDispatcher
+  commentId: T:AlquilerMicroservicio.Infrastructure.Events.IDomainEventDispatcher
+  parent: AlquilerMicroservicio.Infrastructure.Events
+  href: AlquilerMicroservicio.Infrastructure.Events.IDomainEventDispatcher.html
+  name: IDomainEventDispatcher
+  nameWithType: IDomainEventDispatcher
+  fullName: AlquilerMicroservicio.Infrastructure.Events.IDomainEventDispatcher
+- uid: AlquilerMicroservicio.Infrastructure.Events.DomainEventDispatcher
+  commentId: T:AlquilerMicroservicio.Infrastructure.Events.DomainEventDispatcher
+  href: AlquilerMicroservicio.Infrastructure.Events.DomainEventDispatcher.html
+  name: DomainEventDispatcher
+  nameWithType: DomainEventDispatcher
+  fullName: AlquilerMicroservicio.Infrastructure.Events.DomainEventDispatcher
+- uid: AlquilerMicroservicio.Infrastructure.Events
+  commentId: N:AlquilerMicroservicio.Infrastructure.Events
+  href: AlquilerMicroservicio.html
+  name: AlquilerMicroservicio.Infrastructure.Events
+  nameWithType: AlquilerMicroservicio.Infrastructure.Events
+  fullName: AlquilerMicroservicio.Infrastructure.Events
+  spec.csharp:
+  - uid: AlquilerMicroservicio
+    name: AlquilerMicroservicio
+    href: AlquilerMicroservicio.html
+  - name: .
+  - uid: AlquilerMicroservicio.Infrastructure
+    name: Infrastructure
+    href: AlquilerMicroservicio.Infrastructure.html
+  - name: .
+  - uid: AlquilerMicroservicio.Infrastructure.Events
+    name: Events
+    href: AlquilerMicroservicio.Infrastructure.Events.html
+  spec.vb:
+  - uid: AlquilerMicroservicio
+    name: AlquilerMicroservicio
+    href: AlquilerMicroservicio.html
+  - name: .
+  - uid: AlquilerMicroservicio.Infrastructure
+    name: Infrastructure
+    href: AlquilerMicroservicio.Infrastructure.html
+  - name: .
+  - uid: AlquilerMicroservicio.Infrastructure.Events
+    name: Events
+    href: AlquilerMicroservicio.Infrastructure.Events.html

@@ -1,0 +1,373 @@
+### YamlMime:ManagedReference
+items:
+- uid: AlquilerMicroservicio.Domain.Interfaces.IRentalRepository
+  commentId: T:AlquilerMicroservicio.Domain.Interfaces.IRentalRepository
+  id: IRentalRepository
+  parent: AlquilerMicroservicio.Domain.Interfaces
+  children:
+  - AlquilerMicroservicio.Domain.Interfaces.IRentalRepository.AddAsync(AlquilerMicroservicio.Domain.Entities.Rental)
+  - AlquilerMicroservicio.Domain.Interfaces.IRentalRepository.GetActiveRentalByCustomerAsync(System.String)
+  - AlquilerMicroservicio.Domain.Interfaces.IRentalRepository.GetByIdAsync(System.Guid)
+  - AlquilerMicroservicio.Domain.Interfaces.IRentalRepository.UpdateAsync(AlquilerMicroservicio.Domain.Entities.Rental)
+  langs:
+  - csharp
+  - vb
+  name: IRentalRepository
+  nameWithType: IRentalRepository
+  fullName: AlquilerMicroservicio.Domain.Interfaces.IRentalRepository
+  type: Interface
+  source:
+    id: IRentalRepository
+    path: C:\Users\Tallara\Desktop\AlquilerMicroservicio\AlquilerMicroservicio.Domain\Interfaces\IRentalRepository.cs
+    startLine: 7
+  assemblies:
+  - AlquilerMicroservicio.Domain
+  namespace: AlquilerMicroservicio.Domain.Interfaces
+  summary: Contrato para el repositorio de alquileres. Define las operaciones básicas sobre la entidad Rental.
+  example: []
+  syntax:
+    content: public interface IRentalRepository
+    content.vb: Public Interface IRentalRepository
+- uid: AlquilerMicroservicio.Domain.Interfaces.IRentalRepository.AddAsync(AlquilerMicroservicio.Domain.Entities.Rental)
+  commentId: M:AlquilerMicroservicio.Domain.Interfaces.IRentalRepository.AddAsync(AlquilerMicroservicio.Domain.Entities.Rental)
+  id: AddAsync(AlquilerMicroservicio.Domain.Entities.Rental)
+  parent: AlquilerMicroservicio.Domain.Interfaces.IRentalRepository
+  langs:
+  - csharp
+  - vb
+  name: AddAsync(Rental)
+  nameWithType: IRentalRepository.AddAsync(Rental)
+  fullName: AlquilerMicroservicio.Domain.Interfaces.IRentalRepository.AddAsync(AlquilerMicroservicio.Domain.Entities.Rental)
+  type: Method
+  source:
+    id: AddAsync
+    path: C:\Users\Tallara\Desktop\AlquilerMicroservicio\AlquilerMicroservicio.Domain\Interfaces\IRentalRepository.cs
+    startLine: 12
+  assemblies:
+  - AlquilerMicroservicio.Domain
+  namespace: AlquilerMicroservicio.Domain.Interfaces
+  summary: Agrega un nuevo alquiler al sistema de forma asíncrona.
+  example: []
+  syntax:
+    content: Task AddAsync(Rental rental)
+    parameters:
+    - id: rental
+      type: AlquilerMicroservicio.Domain.Entities.Rental
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function AddAsync(rental As Rental) As Task
+  overload: AlquilerMicroservicio.Domain.Interfaces.IRentalRepository.AddAsync*
+- uid: AlquilerMicroservicio.Domain.Interfaces.IRentalRepository.GetActiveRentalByCustomerAsync(System.String)
+  commentId: M:AlquilerMicroservicio.Domain.Interfaces.IRentalRepository.GetActiveRentalByCustomerAsync(System.String)
+  id: GetActiveRentalByCustomerAsync(System.String)
+  parent: AlquilerMicroservicio.Domain.Interfaces.IRentalRepository
+  langs:
+  - csharp
+  - vb
+  name: GetActiveRentalByCustomerAsync(string)
+  nameWithType: IRentalRepository.GetActiveRentalByCustomerAsync(string)
+  fullName: AlquilerMicroservicio.Domain.Interfaces.IRentalRepository.GetActiveRentalByCustomerAsync(string)
+  type: Method
+  source:
+    id: GetActiveRentalByCustomerAsync
+    path: C:\Users\Tallara\Desktop\AlquilerMicroservicio\AlquilerMicroservicio.Domain\Interfaces\IRentalRepository.cs
+    startLine: 17
+  assemblies:
+  - AlquilerMicroservicio.Domain
+  namespace: AlquilerMicroservicio.Domain.Interfaces
+  summary: Obtiene el alquiler activo de un cliente, si es que tiene uno en curso.
+  example: []
+  syntax:
+    content: Task<Rental?> GetActiveRentalByCustomerAsync(string customerId)
+    parameters:
+    - id: customerId
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task{AlquilerMicroservicio.Domain.Entities.Rental}
+    content.vb: Function GetActiveRentalByCustomerAsync(customerId As String) As Task(Of Rental)
+  overload: AlquilerMicroservicio.Domain.Interfaces.IRentalRepository.GetActiveRentalByCustomerAsync*
+  nameWithType.vb: IRentalRepository.GetActiveRentalByCustomerAsync(String)
+  fullName.vb: AlquilerMicroservicio.Domain.Interfaces.IRentalRepository.GetActiveRentalByCustomerAsync(String)
+  name.vb: GetActiveRentalByCustomerAsync(String)
+- uid: AlquilerMicroservicio.Domain.Interfaces.IRentalRepository.GetByIdAsync(System.Guid)
+  commentId: M:AlquilerMicroservicio.Domain.Interfaces.IRentalRepository.GetByIdAsync(System.Guid)
+  id: GetByIdAsync(System.Guid)
+  parent: AlquilerMicroservicio.Domain.Interfaces.IRentalRepository
+  langs:
+  - csharp
+  - vb
+  name: GetByIdAsync(Guid)
+  nameWithType: IRentalRepository.GetByIdAsync(Guid)
+  fullName: AlquilerMicroservicio.Domain.Interfaces.IRentalRepository.GetByIdAsync(System.Guid)
+  type: Method
+  source:
+    id: GetByIdAsync
+    path: C:\Users\Tallara\Desktop\AlquilerMicroservicio\AlquilerMicroservicio.Domain\Interfaces\IRentalRepository.cs
+    startLine: 22
+  assemblies:
+  - AlquilerMicroservicio.Domain
+  namespace: AlquilerMicroservicio.Domain.Interfaces
+  summary: Busca un alquiler por su identificador.
+  example: []
+  syntax:
+    content: Task<Rental?> GetByIdAsync(Guid id)
+    parameters:
+    - id: id
+      type: System.Guid
+    return:
+      type: System.Threading.Tasks.Task{AlquilerMicroservicio.Domain.Entities.Rental}
+    content.vb: Function GetByIdAsync(id As Guid) As Task(Of Rental)
+  overload: AlquilerMicroservicio.Domain.Interfaces.IRentalRepository.GetByIdAsync*
+- uid: AlquilerMicroservicio.Domain.Interfaces.IRentalRepository.UpdateAsync(AlquilerMicroservicio.Domain.Entities.Rental)
+  commentId: M:AlquilerMicroservicio.Domain.Interfaces.IRentalRepository.UpdateAsync(AlquilerMicroservicio.Domain.Entities.Rental)
+  id: UpdateAsync(AlquilerMicroservicio.Domain.Entities.Rental)
+  parent: AlquilerMicroservicio.Domain.Interfaces.IRentalRepository
+  langs:
+  - csharp
+  - vb
+  name: UpdateAsync(Rental)
+  nameWithType: IRentalRepository.UpdateAsync(Rental)
+  fullName: AlquilerMicroservicio.Domain.Interfaces.IRentalRepository.UpdateAsync(AlquilerMicroservicio.Domain.Entities.Rental)
+  type: Method
+  source:
+    id: UpdateAsync
+    path: C:\Users\Tallara\Desktop\AlquilerMicroservicio\AlquilerMicroservicio.Domain\Interfaces\IRentalRepository.cs
+    startLine: 27
+  assemblies:
+  - AlquilerMicroservicio.Domain
+  namespace: AlquilerMicroservicio.Domain.Interfaces
+  summary: Actualiza la informacion de un alquiler existennte.
+  example: []
+  syntax:
+    content: Task UpdateAsync(Rental rental)
+    parameters:
+    - id: rental
+      type: AlquilerMicroservicio.Domain.Entities.Rental
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function UpdateAsync(rental As Rental) As Task
+  overload: AlquilerMicroservicio.Domain.Interfaces.IRentalRepository.UpdateAsync*
+references:
+- uid: AlquilerMicroservicio.Domain.Interfaces
+  commentId: N:AlquilerMicroservicio.Domain.Interfaces
+  href: AlquilerMicroservicio.html
+  name: AlquilerMicroservicio.Domain.Interfaces
+  nameWithType: AlquilerMicroservicio.Domain.Interfaces
+  fullName: AlquilerMicroservicio.Domain.Interfaces
+  spec.csharp:
+  - uid: AlquilerMicroservicio
+    name: AlquilerMicroservicio
+    href: AlquilerMicroservicio.html
+  - name: .
+  - uid: AlquilerMicroservicio.Domain
+    name: Domain
+    href: AlquilerMicroservicio.Domain.html
+  - name: .
+  - uid: AlquilerMicroservicio.Domain.Interfaces
+    name: Interfaces
+    href: AlquilerMicroservicio.Domain.Interfaces.html
+  spec.vb:
+  - uid: AlquilerMicroservicio
+    name: AlquilerMicroservicio
+    href: AlquilerMicroservicio.html
+  - name: .
+  - uid: AlquilerMicroservicio.Domain
+    name: Domain
+    href: AlquilerMicroservicio.Domain.html
+  - name: .
+  - uid: AlquilerMicroservicio.Domain.Interfaces
+    name: Interfaces
+    href: AlquilerMicroservicio.Domain.Interfaces.html
+- uid: AlquilerMicroservicio.Domain.Interfaces.IRentalRepository.AddAsync*
+  commentId: Overload:AlquilerMicroservicio.Domain.Interfaces.IRentalRepository.AddAsync
+  href: AlquilerMicroservicio.Domain.Interfaces.IRentalRepository.html#AlquilerMicroservicio_Domain_Interfaces_IRentalRepository_AddAsync_AlquilerMicroservicio_Domain_Entities_Rental_
+  name: AddAsync
+  nameWithType: IRentalRepository.AddAsync
+  fullName: AlquilerMicroservicio.Domain.Interfaces.IRentalRepository.AddAsync
+- uid: AlquilerMicroservicio.Domain.Entities.Rental
+  commentId: T:AlquilerMicroservicio.Domain.Entities.Rental
+  parent: AlquilerMicroservicio.Domain.Entities
+  href: AlquilerMicroservicio.Domain.Entities.Rental.html
+  name: Rental
+  nameWithType: Rental
+  fullName: AlquilerMicroservicio.Domain.Entities.Rental
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: AlquilerMicroservicio.Domain.Entities
+  commentId: N:AlquilerMicroservicio.Domain.Entities
+  href: AlquilerMicroservicio.html
+  name: AlquilerMicroservicio.Domain.Entities
+  nameWithType: AlquilerMicroservicio.Domain.Entities
+  fullName: AlquilerMicroservicio.Domain.Entities
+  spec.csharp:
+  - uid: AlquilerMicroservicio
+    name: AlquilerMicroservicio
+    href: AlquilerMicroservicio.html
+  - name: .
+  - uid: AlquilerMicroservicio.Domain
+    name: Domain
+    href: AlquilerMicroservicio.Domain.html
+  - name: .
+  - uid: AlquilerMicroservicio.Domain.Entities
+    name: Entities
+    href: AlquilerMicroservicio.Domain.Entities.html
+  spec.vb:
+  - uid: AlquilerMicroservicio
+    name: AlquilerMicroservicio
+    href: AlquilerMicroservicio.html
+  - name: .
+  - uid: AlquilerMicroservicio.Domain
+    name: Domain
+    href: AlquilerMicroservicio.Domain.html
+  - name: .
+  - uid: AlquilerMicroservicio.Domain.Entities
+    name: Entities
+    href: AlquilerMicroservicio.Domain.Entities.html
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: AlquilerMicroservicio.Domain.Interfaces.IRentalRepository.GetActiveRentalByCustomerAsync*
+  commentId: Overload:AlquilerMicroservicio.Domain.Interfaces.IRentalRepository.GetActiveRentalByCustomerAsync
+  href: AlquilerMicroservicio.Domain.Interfaces.IRentalRepository.html#AlquilerMicroservicio_Domain_Interfaces_IRentalRepository_GetActiveRentalByCustomerAsync_System_String_
+  name: GetActiveRentalByCustomerAsync
+  nameWithType: IRentalRepository.GetActiveRentalByCustomerAsync
+  fullName: AlquilerMicroservicio.Domain.Interfaces.IRentalRepository.GetActiveRentalByCustomerAsync
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Threading.Tasks.Task{AlquilerMicroservicio.Domain.Entities.Rental}
+  commentId: T:System.Threading.Tasks.Task{AlquilerMicroservicio.Domain.Entities.Rental}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<Rental>
+  nameWithType: Task<Rental>
+  fullName: System.Threading.Tasks.Task<AlquilerMicroservicio.Domain.Entities.Rental>
+  nameWithType.vb: Task(Of Rental)
+  fullName.vb: System.Threading.Tasks.Task(Of AlquilerMicroservicio.Domain.Entities.Rental)
+  name.vb: Task(Of Rental)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: AlquilerMicroservicio.Domain.Entities.Rental
+    name: Rental
+    href: AlquilerMicroservicio.Domain.Entities.Rental.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: AlquilerMicroservicio.Domain.Entities.Rental
+    name: Rental
+    href: AlquilerMicroservicio.Domain.Entities.Rental.html
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: AlquilerMicroservicio.Domain.Interfaces.IRentalRepository.GetByIdAsync*
+  commentId: Overload:AlquilerMicroservicio.Domain.Interfaces.IRentalRepository.GetByIdAsync
+  href: AlquilerMicroservicio.Domain.Interfaces.IRentalRepository.html#AlquilerMicroservicio_Domain_Interfaces_IRentalRepository_GetByIdAsync_System_Guid_
+  name: GetByIdAsync
+  nameWithType: IRentalRepository.GetByIdAsync
+  fullName: AlquilerMicroservicio.Domain.Interfaces.IRentalRepository.GetByIdAsync
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: AlquilerMicroservicio.Domain.Interfaces.IRentalRepository.UpdateAsync*
+  commentId: Overload:AlquilerMicroservicio.Domain.Interfaces.IRentalRepository.UpdateAsync
+  href: AlquilerMicroservicio.Domain.Interfaces.IRentalRepository.html#AlquilerMicroservicio_Domain_Interfaces_IRentalRepository_UpdateAsync_AlquilerMicroservicio_Domain_Entities_Rental_
+  name: UpdateAsync
+  nameWithType: IRentalRepository.UpdateAsync
+  fullName: AlquilerMicroservicio.Domain.Interfaces.IRentalRepository.UpdateAsync

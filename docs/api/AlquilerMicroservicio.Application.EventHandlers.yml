@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: AlquilerMicroservicio.Application.EventHandlers
+  commentId: N:AlquilerMicroservicio.Application.EventHandlers
+  id: AlquilerMicroservicio.Application.EventHandlers
+  children:
+  - AlquilerMicroservicio.Application.EventHandlers.VehicleRentedDomainEventHandler
+  langs:
+  - csharp
+  - vb
+  name: AlquilerMicroservicio.Application.EventHandlers
+  nameWithType: AlquilerMicroservicio.Application.EventHandlers
+  fullName: AlquilerMicroservicio.Application.EventHandlers
+  type: Namespace
+  assemblies:
+  - AlquilerMicroservicio.Application
+references:
+- uid: AlquilerMicroservicio.Application.EventHandlers.VehicleRentedDomainEventHandler
+  commentId: T:AlquilerMicroservicio.Application.EventHandlers.VehicleRentedDomainEventHandler
+  href: AlquilerMicroservicio.Application.EventHandlers.VehicleRentedDomainEventHandler.html
+  name: VehicleRentedDomainEventHandler
+  nameWithType: VehicleRentedDomainEventHandler
+  fullName: AlquilerMicroservicio.Application.EventHandlers.VehicleRentedDomainEventHandler

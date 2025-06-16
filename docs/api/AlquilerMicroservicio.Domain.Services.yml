@@ -1,0 +1,54 @@
+### YamlMime:ManagedReference
+items:
+- uid: AlquilerMicroservicio.Domain.Services
+  commentId: N:AlquilerMicroservicio.Domain.Services
+  id: AlquilerMicroservicio.Domain.Services
+  children:
+  - AlquilerMicroservicio.Domain.Services.RentalDomainService
+  langs:
+  - csharp
+  - vb
+  name: AlquilerMicroservicio.Domain.Services
+  nameWithType: AlquilerMicroservicio.Domain.Services
+  fullName: AlquilerMicroservicio.Domain.Services
+  type: Namespace
+  assemblies:
+  - AlquilerMicroservicio.Domain
+references:
+- uid: AlquilerMicroservicio.Domain.Services.RentalDomainService
+  commentId: T:AlquilerMicroservicio.Domain.Services.RentalDomainService
+  parent: AlquilerMicroservicio.Domain.Services
+  href: AlquilerMicroservicio.Domain.Services.RentalDomainService.html
+  name: RentalDomainService
+  nameWithType: RentalDomainService
+  fullName: AlquilerMicroservicio.Domain.Services.RentalDomainService
+- uid: AlquilerMicroservicio.Domain.Services
+  commentId: N:AlquilerMicroservicio.Domain.Services
+  href: AlquilerMicroservicio.html
+  name: AlquilerMicroservicio.Domain.Services
+  nameWithType: AlquilerMicroservicio.Domain.Services
+  fullName: AlquilerMicroservicio.Domain.Services
+  spec.csharp:
+  - uid: AlquilerMicroservicio
+    name: AlquilerMicroservicio
+    href: AlquilerMicroservicio.html
+  - name: .
+  - uid: AlquilerMicroservicio.Domain
+    name: Domain
+    href: AlquilerMicroservicio.Domain.html
+  - name: .
+  - uid: AlquilerMicroservicio.Domain.Services
+    name: Services
+    href: AlquilerMicroservicio.Domain.Services.html
+  spec.vb:
+  - uid: AlquilerMicroservicio
+    name: AlquilerMicroservicio
+    href: AlquilerMicroservicio.html
+  - name: .
+  - uid: AlquilerMicroservicio.Domain
+    name: Domain
+    href: AlquilerMicroservicio.Domain.html
+  - name: .
+  - uid: AlquilerMicroservicio.Domain.Services
+    name: Services
+    href: AlquilerMicroservicio.Domain.Services.html

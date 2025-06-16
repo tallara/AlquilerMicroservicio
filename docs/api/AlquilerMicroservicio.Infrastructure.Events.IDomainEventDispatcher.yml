@@ -1,0 +1,190 @@
+### YamlMime:ManagedReference
+items:
+- uid: AlquilerMicroservicio.Infrastructure.Events.IDomainEventDispatcher
+  commentId: T:AlquilerMicroservicio.Infrastructure.Events.IDomainEventDispatcher
+  id: IDomainEventDispatcher
+  parent: AlquilerMicroservicio.Infrastructure.Events
+  children:
+  - AlquilerMicroservicio.Infrastructure.Events.IDomainEventDispatcher.DispatchAsync``1(``0,System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: IDomainEventDispatcher
+  nameWithType: IDomainEventDispatcher
+  fullName: AlquilerMicroservicio.Infrastructure.Events.IDomainEventDispatcher
+  type: Interface
+  source:
+    id: IDomainEventDispatcher
+    path: C:\Users\Tallara\Desktop\AlquilerMicroservicio\AlquilerMicroservicio.Infrastructure\Events\DomainEventDispatcher.cs
+    startLine: 9
+  assemblies:
+  - AlquilerMicroservicio.Infrastructure
+  namespace: AlquilerMicroservicio.Infrastructure.Events
+  summary: Interfaz para despachar eventos de dominio usando un mecanismo externo.
+  example: []
+  syntax:
+    content: public interface IDomainEventDispatcher
+    content.vb: Public Interface IDomainEventDispatcher
+- uid: AlquilerMicroservicio.Infrastructure.Events.IDomainEventDispatcher.DispatchAsync``1(``0,System.Threading.CancellationToken)
+  commentId: M:AlquilerMicroservicio.Infrastructure.Events.IDomainEventDispatcher.DispatchAsync``1(``0,System.Threading.CancellationToken)
+  id: DispatchAsync``1(``0,System.Threading.CancellationToken)
+  parent: AlquilerMicroservicio.Infrastructure.Events.IDomainEventDispatcher
+  langs:
+  - csharp
+  - vb
+  name: DispatchAsync<TEvent>(TEvent, CancellationToken)
+  nameWithType: IDomainEventDispatcher.DispatchAsync<TEvent>(TEvent, CancellationToken)
+  fullName: AlquilerMicroservicio.Infrastructure.Events.IDomainEventDispatcher.DispatchAsync<TEvent>(TEvent, System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: DispatchAsync
+    path: C:\Users\Tallara\Desktop\AlquilerMicroservicio\AlquilerMicroservicio.Infrastructure\Events\DomainEventDispatcher.cs
+    startLine: 14
+  assemblies:
+  - AlquilerMicroservicio.Infrastructure
+  namespace: AlquilerMicroservicio.Infrastructure.Events
+  summary: Lanza un evento de dominio mediante el sistema de publicación.
+  example: []
+  syntax:
+    content: 'Task DispatchAsync<TEvent>(TEvent domainEvent, CancellationToken cancellationToken = default) where TEvent : notnull'
+    parameters:
+    - id: domainEvent
+      type: '{TEvent}'
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    typeParameters:
+    - id: TEvent
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function DispatchAsync(Of TEvent)(domainEvent As TEvent, cancellationToken As CancellationToken = Nothing) As Task
+  overload: AlquilerMicroservicio.Infrastructure.Events.IDomainEventDispatcher.DispatchAsync*
+  nameWithType.vb: IDomainEventDispatcher.DispatchAsync(Of TEvent)(TEvent, CancellationToken)
+  fullName.vb: AlquilerMicroservicio.Infrastructure.Events.IDomainEventDispatcher.DispatchAsync(Of TEvent)(TEvent, System.Threading.CancellationToken)
+  name.vb: DispatchAsync(Of TEvent)(TEvent, CancellationToken)
+references:
+- uid: AlquilerMicroservicio.Infrastructure.Events
+  commentId: N:AlquilerMicroservicio.Infrastructure.Events
+  href: AlquilerMicroservicio.html
+  name: AlquilerMicroservicio.Infrastructure.Events
+  nameWithType: AlquilerMicroservicio.Infrastructure.Events
+  fullName: AlquilerMicroservicio.Infrastructure.Events
+  spec.csharp:
+  - uid: AlquilerMicroservicio
+    name: AlquilerMicroservicio
+    href: AlquilerMicroservicio.html
+  - name: .
+  - uid: AlquilerMicroservicio.Infrastructure
+    name: Infrastructure
+    href: AlquilerMicroservicio.Infrastructure.html
+  - name: .
+  - uid: AlquilerMicroservicio.Infrastructure.Events
+    name: Events
+    href: AlquilerMicroservicio.Infrastructure.Events.html
+  spec.vb:
+  - uid: AlquilerMicroservicio
+    name: AlquilerMicroservicio
+    href: AlquilerMicroservicio.html
+  - name: .
+  - uid: AlquilerMicroservicio.Infrastructure
+    name: Infrastructure
+    href: AlquilerMicroservicio.Infrastructure.html
+  - name: .
+  - uid: AlquilerMicroservicio.Infrastructure.Events
+    name: Events
+    href: AlquilerMicroservicio.Infrastructure.Events.html
+- uid: AlquilerMicroservicio.Infrastructure.Events.IDomainEventDispatcher.DispatchAsync*
+  commentId: Overload:AlquilerMicroservicio.Infrastructure.Events.IDomainEventDispatcher.DispatchAsync
+  href: AlquilerMicroservicio.Infrastructure.Events.IDomainEventDispatcher.html#AlquilerMicroservicio_Infrastructure_Events_IDomainEventDispatcher_DispatchAsync__1___0_System_Threading_CancellationToken_
+  name: DispatchAsync
+  nameWithType: IDomainEventDispatcher.DispatchAsync
+  fullName: AlquilerMicroservicio.Infrastructure.Events.IDomainEventDispatcher.DispatchAsync
+- uid: '{TEvent}'
+  commentId: '!:TEvent'
+  definition: TEvent
+  name: TEvent
+  nameWithType: TEvent
+  fullName: TEvent
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: TEvent
+  name: TEvent
+  nameWithType: TEvent
+  fullName: TEvent
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks

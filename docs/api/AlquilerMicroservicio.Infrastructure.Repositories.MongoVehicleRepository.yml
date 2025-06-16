@@ -1,0 +1,856 @@
+### YamlMime:ManagedReference
+items:
+- uid: AlquilerMicroservicio.Infrastructure.Repositories.MongoVehicleRepository
+  commentId: T:AlquilerMicroservicio.Infrastructure.Repositories.MongoVehicleRepository
+  id: MongoVehicleRepository
+  parent: AlquilerMicroservicio.Infrastructure.Repositories
+  children:
+  - AlquilerMicroservicio.Infrastructure.Repositories.MongoVehicleRepository.#ctor(MongoDB.Driver.IMongoDatabase)
+  - AlquilerMicroservicio.Infrastructure.Repositories.MongoVehicleRepository.AddAsync(AlquilerMicroservicio.Domain.Entities.Vehicle)
+  - AlquilerMicroservicio.Infrastructure.Repositories.MongoVehicleRepository.GetAvailableAsync
+  - AlquilerMicroservicio.Infrastructure.Repositories.MongoVehicleRepository.GetByIdAsync(System.Guid)
+  - AlquilerMicroservicio.Infrastructure.Repositories.MongoVehicleRepository.UpdateAsync(AlquilerMicroservicio.Domain.Entities.Vehicle)
+  langs:
+  - csharp
+  - vb
+  name: MongoVehicleRepository
+  nameWithType: MongoVehicleRepository
+  fullName: AlquilerMicroservicio.Infrastructure.Repositories.MongoVehicleRepository
+  type: Class
+  source:
+    id: MongoVehicleRepository
+    path: C:\Users\Tallara\Desktop\AlquilerMicroservicio\AlquilerMicroservicio.Infrastructure\Repositories\MongoVehicleRepository.cs
+    startLine: 9
+  assemblies:
+  - AlquilerMicroservicio.Infrastructure
+  namespace: AlquilerMicroservicio.Infrastructure.Repositories
+  summary: Implementación del repositorio de vehículos usando MongoDB como base de datos.
+  example: []
+  syntax:
+    content: 'public class MongoVehicleRepository : IVehicleRepository'
+    content.vb: Public Class MongoVehicleRepository Implements IVehicleRepository
+  inheritance:
+  - System.Object
+  implements:
+  - AlquilerMicroservicio.Domain.Interfaces.IVehicleRepository
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: AlquilerMicroservicio.Infrastructure.Repositories.MongoVehicleRepository.#ctor(MongoDB.Driver.IMongoDatabase)
+  commentId: M:AlquilerMicroservicio.Infrastructure.Repositories.MongoVehicleRepository.#ctor(MongoDB.Driver.IMongoDatabase)
+  id: '#ctor(MongoDB.Driver.IMongoDatabase)'
+  parent: AlquilerMicroservicio.Infrastructure.Repositories.MongoVehicleRepository
+  langs:
+  - csharp
+  - vb
+  name: MongoVehicleRepository(IMongoDatabase)
+  nameWithType: MongoVehicleRepository.MongoVehicleRepository(IMongoDatabase)
+  fullName: AlquilerMicroservicio.Infrastructure.Repositories.MongoVehicleRepository.MongoVehicleRepository(MongoDB.Driver.IMongoDatabase)
+  type: Constructor
+  source:
+    id: .ctor
+    path: C:\Users\Tallara\Desktop\AlquilerMicroservicio\AlquilerMicroservicio.Infrastructure\Repositories\MongoVehicleRepository.cs
+    startLine: 16
+  assemblies:
+  - AlquilerMicroservicio.Infrastructure
+  namespace: AlquilerMicroservicio.Infrastructure.Repositories
+  summary: Constructor que accede a la colección de vehículos en MongoDB.
+  example: []
+  syntax:
+    content: public MongoVehicleRepository(IMongoDatabase database)
+    parameters:
+    - id: database
+      type: MongoDB.Driver.IMongoDatabase
+    content.vb: Public Sub New(database As IMongoDatabase)
+  overload: AlquilerMicroservicio.Infrastructure.Repositories.MongoVehicleRepository.#ctor*
+  nameWithType.vb: MongoVehicleRepository.New(IMongoDatabase)
+  fullName.vb: AlquilerMicroservicio.Infrastructure.Repositories.MongoVehicleRepository.New(MongoDB.Driver.IMongoDatabase)
+  name.vb: New(IMongoDatabase)
+- uid: AlquilerMicroservicio.Infrastructure.Repositories.MongoVehicleRepository.AddAsync(AlquilerMicroservicio.Domain.Entities.Vehicle)
+  commentId: M:AlquilerMicroservicio.Infrastructure.Repositories.MongoVehicleRepository.AddAsync(AlquilerMicroservicio.Domain.Entities.Vehicle)
+  id: AddAsync(AlquilerMicroservicio.Domain.Entities.Vehicle)
+  parent: AlquilerMicroservicio.Infrastructure.Repositories.MongoVehicleRepository
+  langs:
+  - csharp
+  - vb
+  name: AddAsync(Vehicle)
+  nameWithType: MongoVehicleRepository.AddAsync(Vehicle)
+  fullName: AlquilerMicroservicio.Infrastructure.Repositories.MongoVehicleRepository.AddAsync(AlquilerMicroservicio.Domain.Entities.Vehicle)
+  type: Method
+  source:
+    id: AddAsync
+    path: C:\Users\Tallara\Desktop\AlquilerMicroservicio\AlquilerMicroservicio.Infrastructure\Repositories\MongoVehicleRepository.cs
+    startLine: 24
+  assemblies:
+  - AlquilerMicroservicio.Infrastructure
+  namespace: AlquilerMicroservicio.Infrastructure.Repositories
+  summary: Inserta un vehículo nuevo en la colección.
+  example: []
+  syntax:
+    content: public Task AddAsync(Vehicle vehicle)
+    parameters:
+    - id: vehicle
+      type: AlquilerMicroservicio.Domain.Entities.Vehicle
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function AddAsync(vehicle As Vehicle) As Task
+  overload: AlquilerMicroservicio.Infrastructure.Repositories.MongoVehicleRepository.AddAsync*
+  implements:
+  - AlquilerMicroservicio.Domain.Interfaces.IVehicleRepository.AddAsync(AlquilerMicroservicio.Domain.Entities.Vehicle)
+- uid: AlquilerMicroservicio.Infrastructure.Repositories.MongoVehicleRepository.GetAvailableAsync
+  commentId: M:AlquilerMicroservicio.Infrastructure.Repositories.MongoVehicleRepository.GetAvailableAsync
+  id: GetAvailableAsync
+  parent: AlquilerMicroservicio.Infrastructure.Repositories.MongoVehicleRepository
+  langs:
+  - csharp
+  - vb
+  name: GetAvailableAsync()
+  nameWithType: MongoVehicleRepository.GetAvailableAsync()
+  fullName: AlquilerMicroservicio.Infrastructure.Repositories.MongoVehicleRepository.GetAvailableAsync()
+  type: Method
+  source:
+    id: GetAvailableAsync
+    path: C:\Users\Tallara\Desktop\AlquilerMicroservicio\AlquilerMicroservicio.Infrastructure\Repositories\MongoVehicleRepository.cs
+    startLine: 32
+  assemblies:
+  - AlquilerMicroservicio.Infrastructure
+  namespace: AlquilerMicroservicio.Infrastructure.Repositories
+  summary: Devuelve una lista con los vehículos que no están alquilados.
+  example: []
+  syntax:
+    content: public Task<List<Vehicle>> GetAvailableAsync()
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.List{AlquilerMicroservicio.Domain.Entities.Vehicle}}
+    content.vb: Public Function GetAvailableAsync() As Task(Of List(Of Vehicle))
+  overload: AlquilerMicroservicio.Infrastructure.Repositories.MongoVehicleRepository.GetAvailableAsync*
+  implements:
+  - AlquilerMicroservicio.Domain.Interfaces.IVehicleRepository.GetAvailableAsync
+- uid: AlquilerMicroservicio.Infrastructure.Repositories.MongoVehicleRepository.GetByIdAsync(System.Guid)
+  commentId: M:AlquilerMicroservicio.Infrastructure.Repositories.MongoVehicleRepository.GetByIdAsync(System.Guid)
+  id: GetByIdAsync(System.Guid)
+  parent: AlquilerMicroservicio.Infrastructure.Repositories.MongoVehicleRepository
+  langs:
+  - csharp
+  - vb
+  name: GetByIdAsync(Guid)
+  nameWithType: MongoVehicleRepository.GetByIdAsync(Guid)
+  fullName: AlquilerMicroservicio.Infrastructure.Repositories.MongoVehicleRepository.GetByIdAsync(System.Guid)
+  type: Method
+  source:
+    id: GetByIdAsync
+    path: C:\Users\Tallara\Desktop\AlquilerMicroservicio\AlquilerMicroservicio.Infrastructure\Repositories\MongoVehicleRepository.cs
+    startLine: 40
+  assemblies:
+  - AlquilerMicroservicio.Infrastructure
+  namespace: AlquilerMicroservicio.Infrastructure.Repositories
+  summary: Busca un vehículo por su identificador.
+  example: []
+  syntax:
+    content: public Task<Vehicle?> GetByIdAsync(Guid id)
+    parameters:
+    - id: id
+      type: System.Guid
+    return:
+      type: System.Threading.Tasks.Task{AlquilerMicroservicio.Domain.Entities.Vehicle}
+    content.vb: Public Function GetByIdAsync(id As Guid) As Task(Of Vehicle)
+  overload: AlquilerMicroservicio.Infrastructure.Repositories.MongoVehicleRepository.GetByIdAsync*
+  implements:
+  - AlquilerMicroservicio.Domain.Interfaces.IVehicleRepository.GetByIdAsync(System.Guid)
+- uid: AlquilerMicroservicio.Infrastructure.Repositories.MongoVehicleRepository.UpdateAsync(AlquilerMicroservicio.Domain.Entities.Vehicle)
+  commentId: M:AlquilerMicroservicio.Infrastructure.Repositories.MongoVehicleRepository.UpdateAsync(AlquilerMicroservicio.Domain.Entities.Vehicle)
+  id: UpdateAsync(AlquilerMicroservicio.Domain.Entities.Vehicle)
+  parent: AlquilerMicroservicio.Infrastructure.Repositories.MongoVehicleRepository
+  langs:
+  - csharp
+  - vb
+  name: UpdateAsync(Vehicle)
+  nameWithType: MongoVehicleRepository.UpdateAsync(Vehicle)
+  fullName: AlquilerMicroservicio.Infrastructure.Repositories.MongoVehicleRepository.UpdateAsync(AlquilerMicroservicio.Domain.Entities.Vehicle)
+  type: Method
+  source:
+    id: UpdateAsync
+    path: C:\Users\Tallara\Desktop\AlquilerMicroservicio\AlquilerMicroservicio.Infrastructure\Repositories\MongoVehicleRepository.cs
+    startLine: 48
+  assemblies:
+  - AlquilerMicroservicio.Infrastructure
+  namespace: AlquilerMicroservicio.Infrastructure.Repositories
+  summary: Reemplaza los datos del vehículo con la información nueva.
+  example: []
+  syntax:
+    content: public Task UpdateAsync(Vehicle vehicle)
+    parameters:
+    - id: vehicle
+      type: AlquilerMicroservicio.Domain.Entities.Vehicle
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function UpdateAsync(vehicle As Vehicle) As Task
+  overload: AlquilerMicroservicio.Infrastructure.Repositories.MongoVehicleRepository.UpdateAsync*
+  implements:
+  - AlquilerMicroservicio.Domain.Interfaces.IVehicleRepository.UpdateAsync(AlquilerMicroservicio.Domain.Entities.Vehicle)
+references:
+- uid: AlquilerMicroservicio.Infrastructure.Repositories
+  commentId: N:AlquilerMicroservicio.Infrastructure.Repositories
+  href: AlquilerMicroservicio.html
+  name: AlquilerMicroservicio.Infrastructure.Repositories
+  nameWithType: AlquilerMicroservicio.Infrastructure.Repositories
+  fullName: AlquilerMicroservicio.Infrastructure.Repositories
+  spec.csharp:
+  - uid: AlquilerMicroservicio
+    name: AlquilerMicroservicio
+    href: AlquilerMicroservicio.html
+  - name: .
+  - uid: AlquilerMicroservicio.Infrastructure
+    name: Infrastructure
+    href: AlquilerMicroservicio.Infrastructure.html
+  - name: .
+  - uid: AlquilerMicroservicio.Infrastructure.Repositories
+    name: Repositories
+    href: AlquilerMicroservicio.Infrastructure.Repositories.html
+  spec.vb:
+  - uid: AlquilerMicroservicio
+    name: AlquilerMicroservicio
+    href: AlquilerMicroservicio.html
+  - name: .
+  - uid: AlquilerMicroservicio.Infrastructure
+    name: Infrastructure
+    href: AlquilerMicroservicio.Infrastructure.html
+  - name: .
+  - uid: AlquilerMicroservicio.Infrastructure.Repositories
+    name: Repositories
+    href: AlquilerMicroservicio.Infrastructure.Repositories.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: AlquilerMicroservicio.Domain.Interfaces.IVehicleRepository
+  commentId: T:AlquilerMicroservicio.Domain.Interfaces.IVehicleRepository
+  parent: AlquilerMicroservicio.Domain.Interfaces
+  href: AlquilerMicroservicio.Domain.Interfaces.IVehicleRepository.html
+  name: IVehicleRepository
+  nameWithType: IVehicleRepository
+  fullName: AlquilerMicroservicio.Domain.Interfaces.IVehicleRepository
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: AlquilerMicroservicio.Domain.Interfaces
+  commentId: N:AlquilerMicroservicio.Domain.Interfaces
+  href: AlquilerMicroservicio.html
+  name: AlquilerMicroservicio.Domain.Interfaces
+  nameWithType: AlquilerMicroservicio.Domain.Interfaces
+  fullName: AlquilerMicroservicio.Domain.Interfaces
+  spec.csharp:
+  - uid: AlquilerMicroservicio
+    name: AlquilerMicroservicio
+    href: AlquilerMicroservicio.html
+  - name: .
+  - uid: AlquilerMicroservicio.Domain
+    name: Domain
+    href: AlquilerMicroservicio.Domain.html
+  - name: .
+  - uid: AlquilerMicroservicio.Domain.Interfaces
+    name: Interfaces
+    href: AlquilerMicroservicio.Domain.Interfaces.html
+  spec.vb:
+  - uid: AlquilerMicroservicio
+    name: AlquilerMicroservicio
+    href: AlquilerMicroservicio.html
+  - name: .
+  - uid: AlquilerMicroservicio.Domain
+    name: Domain
+    href: AlquilerMicroservicio.Domain.html
+  - name: .
+  - uid: AlquilerMicroservicio.Domain.Interfaces
+    name: Interfaces
+    href: AlquilerMicroservicio.Domain.Interfaces.html
+- uid: AlquilerMicroservicio.Infrastructure.Repositories.MongoVehicleRepository.#ctor*
+  commentId: Overload:AlquilerMicroservicio.Infrastructure.Repositories.MongoVehicleRepository.#ctor
+  href: AlquilerMicroservicio.Infrastructure.Repositories.MongoVehicleRepository.html#AlquilerMicroservicio_Infrastructure_Repositories_MongoVehicleRepository__ctor_MongoDB_Driver_IMongoDatabase_
+  name: MongoVehicleRepository
+  nameWithType: MongoVehicleRepository.MongoVehicleRepository
+  fullName: AlquilerMicroservicio.Infrastructure.Repositories.MongoVehicleRepository.MongoVehicleRepository
+  nameWithType.vb: MongoVehicleRepository.New
+  fullName.vb: AlquilerMicroservicio.Infrastructure.Repositories.MongoVehicleRepository.New
+  name.vb: New
+- uid: MongoDB.Driver.IMongoDatabase
+  commentId: T:MongoDB.Driver.IMongoDatabase
+  parent: MongoDB.Driver
+  isExternal: true
+  name: IMongoDatabase
+  nameWithType: IMongoDatabase
+  fullName: MongoDB.Driver.IMongoDatabase
+- uid: MongoDB.Driver
+  commentId: N:MongoDB.Driver
+  isExternal: true
+  name: MongoDB.Driver
+  nameWithType: MongoDB.Driver
+  fullName: MongoDB.Driver
+  spec.csharp:
+  - uid: MongoDB
+    name: MongoDB
+    isExternal: true
+  - name: .
+  - uid: MongoDB.Driver
+    name: Driver
+    isExternal: true
+  spec.vb:
+  - uid: MongoDB
+    name: MongoDB
+    isExternal: true
+  - name: .
+  - uid: MongoDB.Driver
+    name: Driver
+    isExternal: true
+- uid: AlquilerMicroservicio.Infrastructure.Repositories.MongoVehicleRepository.AddAsync*
+  commentId: Overload:AlquilerMicroservicio.Infrastructure.Repositories.MongoVehicleRepository.AddAsync
+  href: AlquilerMicroservicio.Infrastructure.Repositories.MongoVehicleRepository.html#AlquilerMicroservicio_Infrastructure_Repositories_MongoVehicleRepository_AddAsync_AlquilerMicroservicio_Domain_Entities_Vehicle_
+  name: AddAsync
+  nameWithType: MongoVehicleRepository.AddAsync
+  fullName: AlquilerMicroservicio.Infrastructure.Repositories.MongoVehicleRepository.AddAsync
+- uid: AlquilerMicroservicio.Domain.Interfaces.IVehicleRepository.AddAsync(AlquilerMicroservicio.Domain.Entities.Vehicle)
+  commentId: M:AlquilerMicroservicio.Domain.Interfaces.IVehicleRepository.AddAsync(AlquilerMicroservicio.Domain.Entities.Vehicle)
+  parent: AlquilerMicroservicio.Domain.Interfaces.IVehicleRepository
+  href: AlquilerMicroservicio.Domain.Interfaces.IVehicleRepository.html#AlquilerMicroservicio_Domain_Interfaces_IVehicleRepository_AddAsync_AlquilerMicroservicio_Domain_Entities_Vehicle_
+  name: AddAsync(Vehicle)
+  nameWithType: IVehicleRepository.AddAsync(Vehicle)
+  fullName: AlquilerMicroservicio.Domain.Interfaces.IVehicleRepository.AddAsync(AlquilerMicroservicio.Domain.Entities.Vehicle)
+  spec.csharp:
+  - uid: AlquilerMicroservicio.Domain.Interfaces.IVehicleRepository.AddAsync(AlquilerMicroservicio.Domain.Entities.Vehicle)
+    name: AddAsync
+    href: AlquilerMicroservicio.Domain.Interfaces.IVehicleRepository.html#AlquilerMicroservicio_Domain_Interfaces_IVehicleRepository_AddAsync_AlquilerMicroservicio_Domain_Entities_Vehicle_
+  - name: (
+  - uid: AlquilerMicroservicio.Domain.Entities.Vehicle
+    name: Vehicle
+    href: AlquilerMicroservicio.Domain.Entities.Vehicle.html
+  - name: )
+  spec.vb:
+  - uid: AlquilerMicroservicio.Domain.Interfaces.IVehicleRepository.AddAsync(AlquilerMicroservicio.Domain.Entities.Vehicle)
+    name: AddAsync
+    href: AlquilerMicroservicio.Domain.Interfaces.IVehicleRepository.html#AlquilerMicroservicio_Domain_Interfaces_IVehicleRepository_AddAsync_AlquilerMicroservicio_Domain_Entities_Vehicle_
+  - name: (
+  - uid: AlquilerMicroservicio.Domain.Entities.Vehicle
+    name: Vehicle
+    href: AlquilerMicroservicio.Domain.Entities.Vehicle.html
+  - name: )
+- uid: AlquilerMicroservicio.Domain.Entities.Vehicle
+  commentId: T:AlquilerMicroservicio.Domain.Entities.Vehicle
+  parent: AlquilerMicroservicio.Domain.Entities
+  href: AlquilerMicroservicio.Domain.Entities.Vehicle.html
+  name: Vehicle
+  nameWithType: Vehicle
+  fullName: AlquilerMicroservicio.Domain.Entities.Vehicle
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: AlquilerMicroservicio.Domain.Entities
+  commentId: N:AlquilerMicroservicio.Domain.Entities
+  href: AlquilerMicroservicio.html
+  name: AlquilerMicroservicio.Domain.Entities
+  nameWithType: AlquilerMicroservicio.Domain.Entities
+  fullName: AlquilerMicroservicio.Domain.Entities
+  spec.csharp:
+  - uid: AlquilerMicroservicio
+    name: AlquilerMicroservicio
+    href: AlquilerMicroservicio.html
+  - name: .
+  - uid: AlquilerMicroservicio.Domain
+    name: Domain
+    href: AlquilerMicroservicio.Domain.html
+  - name: .
+  - uid: AlquilerMicroservicio.Domain.Entities
+    name: Entities
+    href: AlquilerMicroservicio.Domain.Entities.html
+  spec.vb:
+  - uid: AlquilerMicroservicio
+    name: AlquilerMicroservicio
+    href: AlquilerMicroservicio.html
+  - name: .
+  - uid: AlquilerMicroservicio.Domain
+    name: Domain
+    href: AlquilerMicroservicio.Domain.html
+  - name: .
+  - uid: AlquilerMicroservicio.Domain.Entities
+    name: Entities
+    href: AlquilerMicroservicio.Domain.Entities.html
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: AlquilerMicroservicio.Infrastructure.Repositories.MongoVehicleRepository.GetAvailableAsync*
+  commentId: Overload:AlquilerMicroservicio.Infrastructure.Repositories.MongoVehicleRepository.GetAvailableAsync
+  href: AlquilerMicroservicio.Infrastructure.Repositories.MongoVehicleRepository.html#AlquilerMicroservicio_Infrastructure_Repositories_MongoVehicleRepository_GetAvailableAsync
+  name: GetAvailableAsync
+  nameWithType: MongoVehicleRepository.GetAvailableAsync
+  fullName: AlquilerMicroservicio.Infrastructure.Repositories.MongoVehicleRepository.GetAvailableAsync
+- uid: AlquilerMicroservicio.Domain.Interfaces.IVehicleRepository.GetAvailableAsync
+  commentId: M:AlquilerMicroservicio.Domain.Interfaces.IVehicleRepository.GetAvailableAsync
+  parent: AlquilerMicroservicio.Domain.Interfaces.IVehicleRepository
+  href: AlquilerMicroservicio.Domain.Interfaces.IVehicleRepository.html#AlquilerMicroservicio_Domain_Interfaces_IVehicleRepository_GetAvailableAsync
+  name: GetAvailableAsync()
+  nameWithType: IVehicleRepository.GetAvailableAsync()
+  fullName: AlquilerMicroservicio.Domain.Interfaces.IVehicleRepository.GetAvailableAsync()
+  spec.csharp:
+  - uid: AlquilerMicroservicio.Domain.Interfaces.IVehicleRepository.GetAvailableAsync
+    name: GetAvailableAsync
+    href: AlquilerMicroservicio.Domain.Interfaces.IVehicleRepository.html#AlquilerMicroservicio_Domain_Interfaces_IVehicleRepository_GetAvailableAsync
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: AlquilerMicroservicio.Domain.Interfaces.IVehicleRepository.GetAvailableAsync
+    name: GetAvailableAsync
+    href: AlquilerMicroservicio.Domain.Interfaces.IVehicleRepository.html#AlquilerMicroservicio_Domain_Interfaces_IVehicleRepository_GetAvailableAsync
+  - name: (
+  - name: )
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.List{AlquilerMicroservicio.Domain.Entities.Vehicle}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.List{AlquilerMicroservicio.Domain.Entities.Vehicle}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<List<Vehicle>>
+  nameWithType: Task<List<Vehicle>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.List<AlquilerMicroservicio.Domain.Entities.Vehicle>>
+  nameWithType.vb: Task(Of List(Of Vehicle))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.List(Of AlquilerMicroservicio.Domain.Entities.Vehicle))
+  name.vb: Task(Of List(Of Vehicle))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: AlquilerMicroservicio.Domain.Entities.Vehicle
+    name: Vehicle
+    href: AlquilerMicroservicio.Domain.Entities.Vehicle.html
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: AlquilerMicroservicio.Domain.Entities.Vehicle
+    name: Vehicle
+    href: AlquilerMicroservicio.Domain.Entities.Vehicle.html
+  - name: )
+  - name: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: AlquilerMicroservicio.Infrastructure.Repositories.MongoVehicleRepository.GetByIdAsync*
+  commentId: Overload:AlquilerMicroservicio.Infrastructure.Repositories.MongoVehicleRepository.GetByIdAsync
+  href: AlquilerMicroservicio.Infrastructure.Repositories.MongoVehicleRepository.html#AlquilerMicroservicio_Infrastructure_Repositories_MongoVehicleRepository_GetByIdAsync_System_Guid_
+  name: GetByIdAsync
+  nameWithType: MongoVehicleRepository.GetByIdAsync
+  fullName: AlquilerMicroservicio.Infrastructure.Repositories.MongoVehicleRepository.GetByIdAsync
+- uid: AlquilerMicroservicio.Domain.Interfaces.IVehicleRepository.GetByIdAsync(System.Guid)
+  commentId: M:AlquilerMicroservicio.Domain.Interfaces.IVehicleRepository.GetByIdAsync(System.Guid)
+  parent: AlquilerMicroservicio.Domain.Interfaces.IVehicleRepository
+  isExternal: true
+  href: AlquilerMicroservicio.Domain.Interfaces.IVehicleRepository.html#AlquilerMicroservicio_Domain_Interfaces_IVehicleRepository_GetByIdAsync_System_Guid_
+  name: GetByIdAsync(Guid)
+  nameWithType: IVehicleRepository.GetByIdAsync(Guid)
+  fullName: AlquilerMicroservicio.Domain.Interfaces.IVehicleRepository.GetByIdAsync(System.Guid)
+  spec.csharp:
+  - uid: AlquilerMicroservicio.Domain.Interfaces.IVehicleRepository.GetByIdAsync(System.Guid)
+    name: GetByIdAsync
+    href: AlquilerMicroservicio.Domain.Interfaces.IVehicleRepository.html#AlquilerMicroservicio_Domain_Interfaces_IVehicleRepository_GetByIdAsync_System_Guid_
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+  spec.vb:
+  - uid: AlquilerMicroservicio.Domain.Interfaces.IVehicleRepository.GetByIdAsync(System.Guid)
+    name: GetByIdAsync
+    href: AlquilerMicroservicio.Domain.Interfaces.IVehicleRepository.html#AlquilerMicroservicio_Domain_Interfaces_IVehicleRepository_GetByIdAsync_System_Guid_
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: System.Threading.Tasks.Task{AlquilerMicroservicio.Domain.Entities.Vehicle}
+  commentId: T:System.Threading.Tasks.Task{AlquilerMicroservicio.Domain.Entities.Vehicle}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<Vehicle>
+  nameWithType: Task<Vehicle>
+  fullName: System.Threading.Tasks.Task<AlquilerMicroservicio.Domain.Entities.Vehicle>
+  nameWithType.vb: Task(Of Vehicle)
+  fullName.vb: System.Threading.Tasks.Task(Of AlquilerMicroservicio.Domain.Entities.Vehicle)
+  name.vb: Task(Of Vehicle)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: AlquilerMicroservicio.Domain.Entities.Vehicle
+    name: Vehicle
+    href: AlquilerMicroservicio.Domain.Entities.Vehicle.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: AlquilerMicroservicio.Domain.Entities.Vehicle
+    name: Vehicle
+    href: AlquilerMicroservicio.Domain.Entities.Vehicle.html
+  - name: )
+- uid: AlquilerMicroservicio.Infrastructure.Repositories.MongoVehicleRepository.UpdateAsync*
+  commentId: Overload:AlquilerMicroservicio.Infrastructure.Repositories.MongoVehicleRepository.UpdateAsync
+  href: AlquilerMicroservicio.Infrastructure.Repositories.MongoVehicleRepository.html#AlquilerMicroservicio_Infrastructure_Repositories_MongoVehicleRepository_UpdateAsync_AlquilerMicroservicio_Domain_Entities_Vehicle_
+  name: UpdateAsync
+  nameWithType: MongoVehicleRepository.UpdateAsync
+  fullName: AlquilerMicroservicio.Infrastructure.Repositories.MongoVehicleRepository.UpdateAsync
+- uid: AlquilerMicroservicio.Domain.Interfaces.IVehicleRepository.UpdateAsync(AlquilerMicroservicio.Domain.Entities.Vehicle)
+  commentId: M:AlquilerMicroservicio.Domain.Interfaces.IVehicleRepository.UpdateAsync(AlquilerMicroservicio.Domain.Entities.Vehicle)
+  parent: AlquilerMicroservicio.Domain.Interfaces.IVehicleRepository
+  href: AlquilerMicroservicio.Domain.Interfaces.IVehicleRepository.html#AlquilerMicroservicio_Domain_Interfaces_IVehicleRepository_UpdateAsync_AlquilerMicroservicio_Domain_Entities_Vehicle_
+  name: UpdateAsync(Vehicle)
+  nameWithType: IVehicleRepository.UpdateAsync(Vehicle)
+  fullName: AlquilerMicroservicio.Domain.Interfaces.IVehicleRepository.UpdateAsync(AlquilerMicroservicio.Domain.Entities.Vehicle)
+  spec.csharp:
+  - uid: AlquilerMicroservicio.Domain.Interfaces.IVehicleRepository.UpdateAsync(AlquilerMicroservicio.Domain.Entities.Vehicle)
+    name: UpdateAsync
+    href: AlquilerMicroservicio.Domain.Interfaces.IVehicleRepository.html#AlquilerMicroservicio_Domain_Interfaces_IVehicleRepository_UpdateAsync_AlquilerMicroservicio_Domain_Entities_Vehicle_
+  - name: (
+  - uid: AlquilerMicroservicio.Domain.Entities.Vehicle
+    name: Vehicle
+    href: AlquilerMicroservicio.Domain.Entities.Vehicle.html
+  - name: )
+  spec.vb:
+  - uid: AlquilerMicroservicio.Domain.Interfaces.IVehicleRepository.UpdateAsync(AlquilerMicroservicio.Domain.Entities.Vehicle)
+    name: UpdateAsync
+    href: AlquilerMicroservicio.Domain.Interfaces.IVehicleRepository.html#AlquilerMicroservicio_Domain_Interfaces_IVehicleRepository_UpdateAsync_AlquilerMicroservicio_Domain_Entities_Vehicle_
+  - name: (
+  - uid: AlquilerMicroservicio.Domain.Entities.Vehicle
+    name: Vehicle
+    href: AlquilerMicroservicio.Domain.Entities.Vehicle.html
+  - name: )

@@ -1,0 +1,54 @@
+### YamlMime:ManagedReference
+items:
+- uid: AlquilerMicroservicio.Application.Queries
+  commentId: N:AlquilerMicroservicio.Application.Queries
+  id: AlquilerMicroservicio.Application.Queries
+  children:
+  - AlquilerMicroservicio.Application.Queries.GetAvailableVehiclesQuery
+  langs:
+  - csharp
+  - vb
+  name: AlquilerMicroservicio.Application.Queries
+  nameWithType: AlquilerMicroservicio.Application.Queries
+  fullName: AlquilerMicroservicio.Application.Queries
+  type: Namespace
+  assemblies:
+  - AlquilerMicroservicio.Application
+references:
+- uid: AlquilerMicroservicio.Application.Queries.GetAvailableVehiclesQuery
+  commentId: T:AlquilerMicroservicio.Application.Queries.GetAvailableVehiclesQuery
+  parent: AlquilerMicroservicio.Application.Queries
+  href: AlquilerMicroservicio.Application.Queries.GetAvailableVehiclesQuery.html
+  name: GetAvailableVehiclesQuery
+  nameWithType: GetAvailableVehiclesQuery
+  fullName: AlquilerMicroservicio.Application.Queries.GetAvailableVehiclesQuery
+- uid: AlquilerMicroservicio.Application.Queries
+  commentId: N:AlquilerMicroservicio.Application.Queries
+  href: AlquilerMicroservicio.html
+  name: AlquilerMicroservicio.Application.Queries
+  nameWithType: AlquilerMicroservicio.Application.Queries
+  fullName: AlquilerMicroservicio.Application.Queries
+  spec.csharp:
+  - uid: AlquilerMicroservicio
+    name: AlquilerMicroservicio
+    href: AlquilerMicroservicio.html
+  - name: .
+  - uid: AlquilerMicroservicio.Application
+    name: Application
+    href: AlquilerMicroservicio.Application.html
+  - name: .
+  - uid: AlquilerMicroservicio.Application.Queries
+    name: Queries
+    href: AlquilerMicroservicio.Application.Queries.html
+  spec.vb:
+  - uid: AlquilerMicroservicio
+    name: AlquilerMicroservicio
+    href: AlquilerMicroservicio.html
+  - name: .
+  - uid: AlquilerMicroservicio.Application
+    name: Application
+    href: AlquilerMicroservicio.Application.html
+  - name: .
+  - uid: AlquilerMicroservicio.Application.Queries
+    name: Queries
+    href: AlquilerMicroservicio.Application.Queries.html

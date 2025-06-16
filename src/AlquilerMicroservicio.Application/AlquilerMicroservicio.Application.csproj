@@ -1,0 +1,20 @@
+﻿
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="12.5.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="2.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="EventHandlers\" />
+    <Folder Include="Queries\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AlquilerMicroservicio.Domain\AlquilerMicroservicio.Domain.csproj" />
+    <ProjectReference Include="..\AlquilerMicroservicio.Infrastructure\AlquilerMicroservicio.Infrastructure.csproj" />
+  </ItemGroup>
+</Project>

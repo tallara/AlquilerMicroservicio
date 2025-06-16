@@ -1,0 +1,484 @@
+### YamlMime:ManagedReference
+items:
+- uid: AlquilerMicroservicio.Domain.Events.VehicleRentedDomainEvent
+  commentId: T:AlquilerMicroservicio.Domain.Events.VehicleRentedDomainEvent
+  id: VehicleRentedDomainEvent
+  parent: AlquilerMicroservicio.Domain.Events
+  children:
+  - AlquilerMicroservicio.Domain.Events.VehicleRentedDomainEvent.#ctor(System.Guid,System.Guid,System.String)
+  - AlquilerMicroservicio.Domain.Events.VehicleRentedDomainEvent.CustomerId
+  - AlquilerMicroservicio.Domain.Events.VehicleRentedDomainEvent.RentalId
+  - AlquilerMicroservicio.Domain.Events.VehicleRentedDomainEvent.VehicleId
+  langs:
+  - csharp
+  - vb
+  name: VehicleRentedDomainEvent
+  nameWithType: VehicleRentedDomainEvent
+  fullName: AlquilerMicroservicio.Domain.Events.VehicleRentedDomainEvent
+  type: Class
+  source:
+    id: VehicleRentedDomainEvent
+    path: C:\Users\Tallara\Desktop\AlquilerMicroservicio\AlquilerMicroservicio.Domain\Events\VehicleRentedDomainEvent.cs
+    startLine: 8
+  assemblies:
+  - AlquilerMicroservicio.Domain
+  namespace: AlquilerMicroservicio.Domain.Events
+  summary: Evento de dominio que se lanza cuando un vehículo ha sido alquilado.
+  example: []
+  syntax:
+    content: 'public class VehicleRentedDomainEvent : INotification'
+    content.vb: Public Class VehicleRentedDomainEvent Implements INotification
+  inheritance:
+  - System.Object
+  implements:
+  - MediatR.INotification
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: AlquilerMicroservicio.Domain.Events.VehicleRentedDomainEvent.RentalId
+  commentId: P:AlquilerMicroservicio.Domain.Events.VehicleRentedDomainEvent.RentalId
+  id: RentalId
+  parent: AlquilerMicroservicio.Domain.Events.VehicleRentedDomainEvent
+  langs:
+  - csharp
+  - vb
+  name: RentalId
+  nameWithType: VehicleRentedDomainEvent.RentalId
+  fullName: AlquilerMicroservicio.Domain.Events.VehicleRentedDomainEvent.RentalId
+  type: Property
+  source:
+    id: RentalId
+    path: C:\Users\Tallara\Desktop\AlquilerMicroservicio\AlquilerMicroservicio.Domain\Events\VehicleRentedDomainEvent.cs
+    startLine: 13
+  assemblies:
+  - AlquilerMicroservicio.Domain
+  namespace: AlquilerMicroservicio.Domain.Events
+  summary: Identificador del alquiler realizado.
+  example: []
+  syntax:
+    content: public Guid RentalId { get; }
+    parameters: []
+    return:
+      type: System.Guid
+    content.vb: Public ReadOnly Property RentalId As Guid
+  overload: AlquilerMicroservicio.Domain.Events.VehicleRentedDomainEvent.RentalId*
+- uid: AlquilerMicroservicio.Domain.Events.VehicleRentedDomainEvent.VehicleId
+  commentId: P:AlquilerMicroservicio.Domain.Events.VehicleRentedDomainEvent.VehicleId
+  id: VehicleId
+  parent: AlquilerMicroservicio.Domain.Events.VehicleRentedDomainEvent
+  langs:
+  - csharp
+  - vb
+  name: VehicleId
+  nameWithType: VehicleRentedDomainEvent.VehicleId
+  fullName: AlquilerMicroservicio.Domain.Events.VehicleRentedDomainEvent.VehicleId
+  type: Property
+  source:
+    id: VehicleId
+    path: C:\Users\Tallara\Desktop\AlquilerMicroservicio\AlquilerMicroservicio.Domain\Events\VehicleRentedDomainEvent.cs
+    startLine: 18
+  assemblies:
+  - AlquilerMicroservicio.Domain
+  namespace: AlquilerMicroservicio.Domain.Events
+  summary: Identificador del vehículo alquilado.
+  example: []
+  syntax:
+    content: public Guid VehicleId { get; }
+    parameters: []
+    return:
+      type: System.Guid
+    content.vb: Public ReadOnly Property VehicleId As Guid
+  overload: AlquilerMicroservicio.Domain.Events.VehicleRentedDomainEvent.VehicleId*
+- uid: AlquilerMicroservicio.Domain.Events.VehicleRentedDomainEvent.CustomerId
+  commentId: P:AlquilerMicroservicio.Domain.Events.VehicleRentedDomainEvent.CustomerId
+  id: CustomerId
+  parent: AlquilerMicroservicio.Domain.Events.VehicleRentedDomainEvent
+  langs:
+  - csharp
+  - vb
+  name: CustomerId
+  nameWithType: VehicleRentedDomainEvent.CustomerId
+  fullName: AlquilerMicroservicio.Domain.Events.VehicleRentedDomainEvent.CustomerId
+  type: Property
+  source:
+    id: CustomerId
+    path: C:\Users\Tallara\Desktop\AlquilerMicroservicio\AlquilerMicroservicio.Domain\Events\VehicleRentedDomainEvent.cs
+    startLine: 23
+  assemblies:
+  - AlquilerMicroservicio.Domain
+  namespace: AlquilerMicroservicio.Domain.Events
+  summary: Identificador del cliente que alquiló el vehículo.
+  example: []
+  syntax:
+    content: public string CustomerId { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property CustomerId As String
+  overload: AlquilerMicroservicio.Domain.Events.VehicleRentedDomainEvent.CustomerId*
+- uid: AlquilerMicroservicio.Domain.Events.VehicleRentedDomainEvent.#ctor(System.Guid,System.Guid,System.String)
+  commentId: M:AlquilerMicroservicio.Domain.Events.VehicleRentedDomainEvent.#ctor(System.Guid,System.Guid,System.String)
+  id: '#ctor(System.Guid,System.Guid,System.String)'
+  parent: AlquilerMicroservicio.Domain.Events.VehicleRentedDomainEvent
+  langs:
+  - csharp
+  - vb
+  name: VehicleRentedDomainEvent(Guid, Guid, string)
+  nameWithType: VehicleRentedDomainEvent.VehicleRentedDomainEvent(Guid, Guid, string)
+  fullName: AlquilerMicroservicio.Domain.Events.VehicleRentedDomainEvent.VehicleRentedDomainEvent(System.Guid, System.Guid, string)
+  type: Constructor
+  source:
+    id: .ctor
+    path: C:\Users\Tallara\Desktop\AlquilerMicroservicio\AlquilerMicroservicio.Domain\Events\VehicleRentedDomainEvent.cs
+    startLine: 28
+  assemblies:
+  - AlquilerMicroservicio.Domain
+  namespace: AlquilerMicroservicio.Domain.Events
+  summary: Constructor del evento que asigna los datos del alquiler realizado.
+  example: []
+  syntax:
+    content: public VehicleRentedDomainEvent(Guid rentalId, Guid vehicleId, string customerId)
+    parameters:
+    - id: rentalId
+      type: System.Guid
+    - id: vehicleId
+      type: System.Guid
+    - id: customerId
+      type: System.String
+    content.vb: Public Sub New(rentalId As Guid, vehicleId As Guid, customerId As String)
+  overload: AlquilerMicroservicio.Domain.Events.VehicleRentedDomainEvent.#ctor*
+  nameWithType.vb: VehicleRentedDomainEvent.New(Guid, Guid, String)
+  fullName.vb: AlquilerMicroservicio.Domain.Events.VehicleRentedDomainEvent.New(System.Guid, System.Guid, String)
+  name.vb: New(Guid, Guid, String)
+references:
+- uid: AlquilerMicroservicio.Domain.Events
+  commentId: N:AlquilerMicroservicio.Domain.Events
+  href: AlquilerMicroservicio.html
+  name: AlquilerMicroservicio.Domain.Events
+  nameWithType: AlquilerMicroservicio.Domain.Events
+  fullName: AlquilerMicroservicio.Domain.Events
+  spec.csharp:
+  - uid: AlquilerMicroservicio
+    name: AlquilerMicroservicio
+    href: AlquilerMicroservicio.html
+  - name: .
+  - uid: AlquilerMicroservicio.Domain
+    name: Domain
+    href: AlquilerMicroservicio.Domain.html
+  - name: .
+  - uid: AlquilerMicroservicio.Domain.Events
+    name: Events
+    href: AlquilerMicroservicio.Domain.Events.html
+  spec.vb:
+  - uid: AlquilerMicroservicio
+    name: AlquilerMicroservicio
+    href: AlquilerMicroservicio.html
+  - name: .
+  - uid: AlquilerMicroservicio.Domain
+    name: Domain
+    href: AlquilerMicroservicio.Domain.html
+  - name: .
+  - uid: AlquilerMicroservicio.Domain.Events
+    name: Events
+    href: AlquilerMicroservicio.Domain.Events.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: MediatR.INotification
+  commentId: T:MediatR.INotification
+  parent: MediatR
+  isExternal: true
+  name: INotification
+  nameWithType: INotification
+  fullName: MediatR.INotification
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MediatR
+  commentId: N:MediatR
+  isExternal: true
+  name: MediatR
+  nameWithType: MediatR
+  fullName: MediatR
+- uid: AlquilerMicroservicio.Domain.Events.VehicleRentedDomainEvent.RentalId*
+  commentId: Overload:AlquilerMicroservicio.Domain.Events.VehicleRentedDomainEvent.RentalId
+  href: AlquilerMicroservicio.Domain.Events.VehicleRentedDomainEvent.html#AlquilerMicroservicio_Domain_Events_VehicleRentedDomainEvent_RentalId
+  name: RentalId
+  nameWithType: VehicleRentedDomainEvent.RentalId
+  fullName: AlquilerMicroservicio.Domain.Events.VehicleRentedDomainEvent.RentalId
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: AlquilerMicroservicio.Domain.Events.VehicleRentedDomainEvent.VehicleId*
+  commentId: Overload:AlquilerMicroservicio.Domain.Events.VehicleRentedDomainEvent.VehicleId
+  href: AlquilerMicroservicio.Domain.Events.VehicleRentedDomainEvent.html#AlquilerMicroservicio_Domain_Events_VehicleRentedDomainEvent_VehicleId
+  name: VehicleId
+  nameWithType: VehicleRentedDomainEvent.VehicleId
+  fullName: AlquilerMicroservicio.Domain.Events.VehicleRentedDomainEvent.VehicleId
+- uid: AlquilerMicroservicio.Domain.Events.VehicleRentedDomainEvent.CustomerId*
+  commentId: Overload:AlquilerMicroservicio.Domain.Events.VehicleRentedDomainEvent.CustomerId
+  href: AlquilerMicroservicio.Domain.Events.VehicleRentedDomainEvent.html#AlquilerMicroservicio_Domain_Events_VehicleRentedDomainEvent_CustomerId
+  name: CustomerId
+  nameWithType: VehicleRentedDomainEvent.CustomerId
+  fullName: AlquilerMicroservicio.Domain.Events.VehicleRentedDomainEvent.CustomerId
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: AlquilerMicroservicio.Domain.Events.VehicleRentedDomainEvent.#ctor*
+  commentId: Overload:AlquilerMicroservicio.Domain.Events.VehicleRentedDomainEvent.#ctor
+  href: AlquilerMicroservicio.Domain.Events.VehicleRentedDomainEvent.html#AlquilerMicroservicio_Domain_Events_VehicleRentedDomainEvent__ctor_System_Guid_System_Guid_System_String_
+  name: VehicleRentedDomainEvent
+  nameWithType: VehicleRentedDomainEvent.VehicleRentedDomainEvent
+  fullName: AlquilerMicroservicio.Domain.Events.VehicleRentedDomainEvent.VehicleRentedDomainEvent
+  nameWithType.vb: VehicleRentedDomainEvent.New
+  fullName.vb: AlquilerMicroservicio.Domain.Events.VehicleRentedDomainEvent.New
+  name.vb: New

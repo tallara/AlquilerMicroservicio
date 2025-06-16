@@ -1,0 +1,403 @@
+### YamlMime:ManagedReference
+items:
+- uid: AlquilerMicroservicio.Domain.Interfaces.IVehicleRepository
+  commentId: T:AlquilerMicroservicio.Domain.Interfaces.IVehicleRepository
+  id: IVehicleRepository
+  parent: AlquilerMicroservicio.Domain.Interfaces
+  children:
+  - AlquilerMicroservicio.Domain.Interfaces.IVehicleRepository.AddAsync(AlquilerMicroservicio.Domain.Entities.Vehicle)
+  - AlquilerMicroservicio.Domain.Interfaces.IVehicleRepository.GetAvailableAsync
+  - AlquilerMicroservicio.Domain.Interfaces.IVehicleRepository.GetByIdAsync(System.Guid)
+  - AlquilerMicroservicio.Domain.Interfaces.IVehicleRepository.UpdateAsync(AlquilerMicroservicio.Domain.Entities.Vehicle)
+  langs:
+  - csharp
+  - vb
+  name: IVehicleRepository
+  nameWithType: IVehicleRepository
+  fullName: AlquilerMicroservicio.Domain.Interfaces.IVehicleRepository
+  type: Interface
+  source:
+    id: IVehicleRepository
+    path: C:\Users\Tallara\Desktop\AlquilerMicroservicio\AlquilerMicroservicio.Domain\Interfaces\IVehicleRepository.cs
+    startLine: 7
+  assemblies:
+  - AlquilerMicroservicio.Domain
+  namespace: AlquilerMicroservicio.Domain.Interfaces
+  summary: Contrato para el repositorio de vehiculos. Define las operaciones permitidas sobre la entidad Vehicle.
+  example: []
+  syntax:
+    content: public interface IVehicleRepository
+    content.vb: Public Interface IVehicleRepository
+- uid: AlquilerMicroservicio.Domain.Interfaces.IVehicleRepository.AddAsync(AlquilerMicroservicio.Domain.Entities.Vehicle)
+  commentId: M:AlquilerMicroservicio.Domain.Interfaces.IVehicleRepository.AddAsync(AlquilerMicroservicio.Domain.Entities.Vehicle)
+  id: AddAsync(AlquilerMicroservicio.Domain.Entities.Vehicle)
+  parent: AlquilerMicroservicio.Domain.Interfaces.IVehicleRepository
+  langs:
+  - csharp
+  - vb
+  name: AddAsync(Vehicle)
+  nameWithType: IVehicleRepository.AddAsync(Vehicle)
+  fullName: AlquilerMicroservicio.Domain.Interfaces.IVehicleRepository.AddAsync(AlquilerMicroservicio.Domain.Entities.Vehicle)
+  type: Method
+  source:
+    id: AddAsync
+    path: C:\Users\Tallara\Desktop\AlquilerMicroservicio\AlquilerMicroservicio.Domain\Interfaces\IVehicleRepository.cs
+    startLine: 12
+  assemblies:
+  - AlquilerMicroservicio.Domain
+  namespace: AlquilerMicroservicio.Domain.Interfaces
+  summary: Guarda un nuevo vehículo en el sistema.
+  example: []
+  syntax:
+    content: Task AddAsync(Vehicle vehicle)
+    parameters:
+    - id: vehicle
+      type: AlquilerMicroservicio.Domain.Entities.Vehicle
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function AddAsync(vehicle As Vehicle) As Task
+  overload: AlquilerMicroservicio.Domain.Interfaces.IVehicleRepository.AddAsync*
+- uid: AlquilerMicroservicio.Domain.Interfaces.IVehicleRepository.GetAvailableAsync
+  commentId: M:AlquilerMicroservicio.Domain.Interfaces.IVehicleRepository.GetAvailableAsync
+  id: GetAvailableAsync
+  parent: AlquilerMicroservicio.Domain.Interfaces.IVehicleRepository
+  langs:
+  - csharp
+  - vb
+  name: GetAvailableAsync()
+  nameWithType: IVehicleRepository.GetAvailableAsync()
+  fullName: AlquilerMicroservicio.Domain.Interfaces.IVehicleRepository.GetAvailableAsync()
+  type: Method
+  source:
+    id: GetAvailableAsync
+    path: C:\Users\Tallara\Desktop\AlquilerMicroservicio\AlquilerMicroservicio.Domain\Interfaces\IVehicleRepository.cs
+    startLine: 17
+  assemblies:
+  - AlquilerMicroservicio.Domain
+  namespace: AlquilerMicroservicio.Domain.Interfaces
+  summary: Devuelve la lista de vehiculos que están disponibles para ser alquilados.
+  example: []
+  syntax:
+    content: Task<List<Vehicle>> GetAvailableAsync()
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.List{AlquilerMicroservicio.Domain.Entities.Vehicle}}
+    content.vb: Function GetAvailableAsync() As Task(Of List(Of Vehicle))
+  overload: AlquilerMicroservicio.Domain.Interfaces.IVehicleRepository.GetAvailableAsync*
+- uid: AlquilerMicroservicio.Domain.Interfaces.IVehicleRepository.GetByIdAsync(System.Guid)
+  commentId: M:AlquilerMicroservicio.Domain.Interfaces.IVehicleRepository.GetByIdAsync(System.Guid)
+  id: GetByIdAsync(System.Guid)
+  parent: AlquilerMicroservicio.Domain.Interfaces.IVehicleRepository
+  langs:
+  - csharp
+  - vb
+  name: GetByIdAsync(Guid)
+  nameWithType: IVehicleRepository.GetByIdAsync(Guid)
+  fullName: AlquilerMicroservicio.Domain.Interfaces.IVehicleRepository.GetByIdAsync(System.Guid)
+  type: Method
+  source:
+    id: GetByIdAsync
+    path: C:\Users\Tallara\Desktop\AlquilerMicroservicio\AlquilerMicroservicio.Domain\Interfaces\IVehicleRepository.cs
+    startLine: 22
+  assemblies:
+  - AlquilerMicroservicio.Domain
+  namespace: AlquilerMicroservicio.Domain.Interfaces
+  summary: Busca un vehiculo por su identificador.
+  example: []
+  syntax:
+    content: Task<Vehicle?> GetByIdAsync(Guid id)
+    parameters:
+    - id: id
+      type: System.Guid
+    return:
+      type: System.Threading.Tasks.Task{AlquilerMicroservicio.Domain.Entities.Vehicle}
+    content.vb: Function GetByIdAsync(id As Guid) As Task(Of Vehicle)
+  overload: AlquilerMicroservicio.Domain.Interfaces.IVehicleRepository.GetByIdAsync*
+- uid: AlquilerMicroservicio.Domain.Interfaces.IVehicleRepository.UpdateAsync(AlquilerMicroservicio.Domain.Entities.Vehicle)
+  commentId: M:AlquilerMicroservicio.Domain.Interfaces.IVehicleRepository.UpdateAsync(AlquilerMicroservicio.Domain.Entities.Vehicle)
+  id: UpdateAsync(AlquilerMicroservicio.Domain.Entities.Vehicle)
+  parent: AlquilerMicroservicio.Domain.Interfaces.IVehicleRepository
+  langs:
+  - csharp
+  - vb
+  name: UpdateAsync(Vehicle)
+  nameWithType: IVehicleRepository.UpdateAsync(Vehicle)
+  fullName: AlquilerMicroservicio.Domain.Interfaces.IVehicleRepository.UpdateAsync(AlquilerMicroservicio.Domain.Entities.Vehicle)
+  type: Method
+  source:
+    id: UpdateAsync
+    path: C:\Users\Tallara\Desktop\AlquilerMicroservicio\AlquilerMicroservicio.Domain\Interfaces\IVehicleRepository.cs
+    startLine: 27
+  assemblies:
+  - AlquilerMicroservicio.Domain
+  namespace: AlquilerMicroservicio.Domain.Interfaces
+  summary: Actualiza la información de un vehiculo existente.
+  example: []
+  syntax:
+    content: Task UpdateAsync(Vehicle vehicle)
+    parameters:
+    - id: vehicle
+      type: AlquilerMicroservicio.Domain.Entities.Vehicle
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function UpdateAsync(vehicle As Vehicle) As Task
+  overload: AlquilerMicroservicio.Domain.Interfaces.IVehicleRepository.UpdateAsync*
+references:
+- uid: AlquilerMicroservicio.Domain.Interfaces
+  commentId: N:AlquilerMicroservicio.Domain.Interfaces
+  href: AlquilerMicroservicio.html
+  name: AlquilerMicroservicio.Domain.Interfaces
+  nameWithType: AlquilerMicroservicio.Domain.Interfaces
+  fullName: AlquilerMicroservicio.Domain.Interfaces
+  spec.csharp:
+  - uid: AlquilerMicroservicio
+    name: AlquilerMicroservicio
+    href: AlquilerMicroservicio.html
+  - name: .
+  - uid: AlquilerMicroservicio.Domain
+    name: Domain
+    href: AlquilerMicroservicio.Domain.html
+  - name: .
+  - uid: AlquilerMicroservicio.Domain.Interfaces
+    name: Interfaces
+    href: AlquilerMicroservicio.Domain.Interfaces.html
+  spec.vb:
+  - uid: AlquilerMicroservicio
+    name: AlquilerMicroservicio
+    href: AlquilerMicroservicio.html
+  - name: .
+  - uid: AlquilerMicroservicio.Domain
+    name: Domain
+    href: AlquilerMicroservicio.Domain.html
+  - name: .
+  - uid: AlquilerMicroservicio.Domain.Interfaces
+    name: Interfaces
+    href: AlquilerMicroservicio.Domain.Interfaces.html
+- uid: AlquilerMicroservicio.Domain.Interfaces.IVehicleRepository.AddAsync*
+  commentId: Overload:AlquilerMicroservicio.Domain.Interfaces.IVehicleRepository.AddAsync
+  href: AlquilerMicroservicio.Domain.Interfaces.IVehicleRepository.html#AlquilerMicroservicio_Domain_Interfaces_IVehicleRepository_AddAsync_AlquilerMicroservicio_Domain_Entities_Vehicle_
+  name: AddAsync
+  nameWithType: IVehicleRepository.AddAsync
+  fullName: AlquilerMicroservicio.Domain.Interfaces.IVehicleRepository.AddAsync
+- uid: AlquilerMicroservicio.Domain.Entities.Vehicle
+  commentId: T:AlquilerMicroservicio.Domain.Entities.Vehicle
+  parent: AlquilerMicroservicio.Domain.Entities
+  href: AlquilerMicroservicio.Domain.Entities.Vehicle.html
+  name: Vehicle
+  nameWithType: Vehicle
+  fullName: AlquilerMicroservicio.Domain.Entities.Vehicle
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: AlquilerMicroservicio.Domain.Entities
+  commentId: N:AlquilerMicroservicio.Domain.Entities
+  href: AlquilerMicroservicio.html
+  name: AlquilerMicroservicio.Domain.Entities
+  nameWithType: AlquilerMicroservicio.Domain.Entities
+  fullName: AlquilerMicroservicio.Domain.Entities
+  spec.csharp:
+  - uid: AlquilerMicroservicio
+    name: AlquilerMicroservicio
+    href: AlquilerMicroservicio.html
+  - name: .
+  - uid: AlquilerMicroservicio.Domain
+    name: Domain
+    href: AlquilerMicroservicio.Domain.html
+  - name: .
+  - uid: AlquilerMicroservicio.Domain.Entities
+    name: Entities
+    href: AlquilerMicroservicio.Domain.Entities.html
+  spec.vb:
+  - uid: AlquilerMicroservicio
+    name: AlquilerMicroservicio
+    href: AlquilerMicroservicio.html
+  - name: .
+  - uid: AlquilerMicroservicio.Domain
+    name: Domain
+    href: AlquilerMicroservicio.Domain.html
+  - name: .
+  - uid: AlquilerMicroservicio.Domain.Entities
+    name: Entities
+    href: AlquilerMicroservicio.Domain.Entities.html
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: AlquilerMicroservicio.Domain.Interfaces.IVehicleRepository.GetAvailableAsync*
+  commentId: Overload:AlquilerMicroservicio.Domain.Interfaces.IVehicleRepository.GetAvailableAsync
+  href: AlquilerMicroservicio.Domain.Interfaces.IVehicleRepository.html#AlquilerMicroservicio_Domain_Interfaces_IVehicleRepository_GetAvailableAsync
+  name: GetAvailableAsync
+  nameWithType: IVehicleRepository.GetAvailableAsync
+  fullName: AlquilerMicroservicio.Domain.Interfaces.IVehicleRepository.GetAvailableAsync
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.List{AlquilerMicroservicio.Domain.Entities.Vehicle}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.List{AlquilerMicroservicio.Domain.Entities.Vehicle}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<List<Vehicle>>
+  nameWithType: Task<List<Vehicle>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.List<AlquilerMicroservicio.Domain.Entities.Vehicle>>
+  nameWithType.vb: Task(Of List(Of Vehicle))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.List(Of AlquilerMicroservicio.Domain.Entities.Vehicle))
+  name.vb: Task(Of List(Of Vehicle))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: AlquilerMicroservicio.Domain.Entities.Vehicle
+    name: Vehicle
+    href: AlquilerMicroservicio.Domain.Entities.Vehicle.html
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: AlquilerMicroservicio.Domain.Entities.Vehicle
+    name: Vehicle
+    href: AlquilerMicroservicio.Domain.Entities.Vehicle.html
+  - name: )
+  - name: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: AlquilerMicroservicio.Domain.Interfaces.IVehicleRepository.GetByIdAsync*
+  commentId: Overload:AlquilerMicroservicio.Domain.Interfaces.IVehicleRepository.GetByIdAsync
+  href: AlquilerMicroservicio.Domain.Interfaces.IVehicleRepository.html#AlquilerMicroservicio_Domain_Interfaces_IVehicleRepository_GetByIdAsync_System_Guid_
+  name: GetByIdAsync
+  nameWithType: IVehicleRepository.GetByIdAsync
+  fullName: AlquilerMicroservicio.Domain.Interfaces.IVehicleRepository.GetByIdAsync
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: System.Threading.Tasks.Task{AlquilerMicroservicio.Domain.Entities.Vehicle}
+  commentId: T:System.Threading.Tasks.Task{AlquilerMicroservicio.Domain.Entities.Vehicle}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<Vehicle>
+  nameWithType: Task<Vehicle>
+  fullName: System.Threading.Tasks.Task<AlquilerMicroservicio.Domain.Entities.Vehicle>
+  nameWithType.vb: Task(Of Vehicle)
+  fullName.vb: System.Threading.Tasks.Task(Of AlquilerMicroservicio.Domain.Entities.Vehicle)
+  name.vb: Task(Of Vehicle)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: AlquilerMicroservicio.Domain.Entities.Vehicle
+    name: Vehicle
+    href: AlquilerMicroservicio.Domain.Entities.Vehicle.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: AlquilerMicroservicio.Domain.Entities.Vehicle
+    name: Vehicle
+    href: AlquilerMicroservicio.Domain.Entities.Vehicle.html
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: AlquilerMicroservicio.Domain.Interfaces.IVehicleRepository.UpdateAsync*
+  commentId: Overload:AlquilerMicroservicio.Domain.Interfaces.IVehicleRepository.UpdateAsync
+  href: AlquilerMicroservicio.Domain.Interfaces.IVehicleRepository.html#AlquilerMicroservicio_Domain_Interfaces_IVehicleRepository_UpdateAsync_AlquilerMicroservicio_Domain_Entities_Vehicle_
+  name: UpdateAsync
+  nameWithType: IVehicleRepository.UpdateAsync
+  fullName: AlquilerMicroservicio.Domain.Interfaces.IVehicleRepository.UpdateAsync

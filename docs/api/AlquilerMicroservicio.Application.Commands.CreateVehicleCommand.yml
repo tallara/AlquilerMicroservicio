@@ -1,0 +1,541 @@
+### YamlMime:ManagedReference
+items:
+- uid: AlquilerMicroservicio.Application.Commands.CreateVehicleCommand
+  commentId: T:AlquilerMicroservicio.Application.Commands.CreateVehicleCommand
+  id: CreateVehicleCommand
+  parent: AlquilerMicroservicio.Application.Commands
+  children:
+  - AlquilerMicroservicio.Application.Commands.CreateVehicleCommand.Brand
+  - AlquilerMicroservicio.Application.Commands.CreateVehicleCommand.Id
+  - AlquilerMicroservicio.Application.Commands.CreateVehicleCommand.ManufactureDate
+  - AlquilerMicroservicio.Application.Commands.CreateVehicleCommand.Model
+  langs:
+  - csharp
+  - vb
+  name: CreateVehicleCommand
+  nameWithType: CreateVehicleCommand
+  fullName: AlquilerMicroservicio.Application.Commands.CreateVehicleCommand
+  type: Class
+  source:
+    id: CreateVehicleCommand
+    path: C:\Users\Tallara\Desktop\AlquilerMicroservicio\AlquilerMicroservicio.Application\Commands\CreateVehicleCommand.cs
+    startLine: 8
+  assemblies:
+  - AlquilerMicroservicio.Application
+  namespace: AlquilerMicroservicio.Application.Commands
+  summary: Comando para crear un vehículo. Se lanza y que el handler se encargue del marrón.
+  example: []
+  syntax:
+    content: 'public class CreateVehicleCommand : IRequest<Unit>, IBaseRequest'
+    content.vb: Public Class CreateVehicleCommand Implements IRequest(Of Unit), IBaseRequest
+  inheritance:
+  - System.Object
+  implements:
+  - MediatR.IRequest{MediatR.Unit}
+  - MediatR.IBaseRequest
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: AlquilerMicroservicio.Application.Commands.CreateVehicleCommand.Id
+  commentId: P:AlquilerMicroservicio.Application.Commands.CreateVehicleCommand.Id
+  id: Id
+  parent: AlquilerMicroservicio.Application.Commands.CreateVehicleCommand
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: CreateVehicleCommand.Id
+  fullName: AlquilerMicroservicio.Application.Commands.CreateVehicleCommand.Id
+  type: Property
+  source:
+    id: Id
+    path: C:\Users\Tallara\Desktop\AlquilerMicroservicio\AlquilerMicroservicio.Application\Commands\CreateVehicleCommand.cs
+    startLine: 13
+  assemblies:
+  - AlquilerMicroservicio.Application
+  namespace: AlquilerMicroservicio.Application.Commands
+  summary: Identificador único del cacharro, que no se repita o la liamos.
+  example: []
+  syntax:
+    content: public Guid Id { get; set; }
+    parameters: []
+    return:
+      type: System.Guid
+    content.vb: Public Property Id As Guid
+  overload: AlquilerMicroservicio.Application.Commands.CreateVehicleCommand.Id*
+- uid: AlquilerMicroservicio.Application.Commands.CreateVehicleCommand.Brand
+  commentId: P:AlquilerMicroservicio.Application.Commands.CreateVehicleCommand.Brand
+  id: Brand
+  parent: AlquilerMicroservicio.Application.Commands.CreateVehicleCommand
+  langs:
+  - csharp
+  - vb
+  name: Brand
+  nameWithType: CreateVehicleCommand.Brand
+  fullName: AlquilerMicroservicio.Application.Commands.CreateVehicleCommand.Brand
+  type: Property
+  source:
+    id: Brand
+    path: C:\Users\Tallara\Desktop\AlquilerMicroservicio\AlquilerMicroservicio.Application\Commands\CreateVehicleCommand.cs
+    startLine: 18
+  assemblies:
+  - AlquilerMicroservicio.Application
+  namespace: AlquilerMicroservicio.Application.Commands
+  summary: Marca del coche, moto o lo que sea que estemos registrando.
+  example: []
+  syntax:
+    content: public string Brand { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Brand As String
+  overload: AlquilerMicroservicio.Application.Commands.CreateVehicleCommand.Brand*
+- uid: AlquilerMicroservicio.Application.Commands.CreateVehicleCommand.Model
+  commentId: P:AlquilerMicroservicio.Application.Commands.CreateVehicleCommand.Model
+  id: Model
+  parent: AlquilerMicroservicio.Application.Commands.CreateVehicleCommand
+  langs:
+  - csharp
+  - vb
+  name: Model
+  nameWithType: CreateVehicleCommand.Model
+  fullName: AlquilerMicroservicio.Application.Commands.CreateVehicleCommand.Model
+  type: Property
+  source:
+    id: Model
+    path: C:\Users\Tallara\Desktop\AlquilerMicroservicio\AlquilerMicroservicio.Application\Commands\CreateVehicleCommand.cs
+    startLine: 23
+  assemblies:
+  - AlquilerMicroservicio.Application
+  namespace: AlquilerMicroservicio.Application.Commands
+  summary: Modelo del vehículo, pa saber si es un trasto o algo decente.
+  example: []
+  syntax:
+    content: public string Model { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Model As String
+  overload: AlquilerMicroservicio.Application.Commands.CreateVehicleCommand.Model*
+- uid: AlquilerMicroservicio.Application.Commands.CreateVehicleCommand.ManufactureDate
+  commentId: P:AlquilerMicroservicio.Application.Commands.CreateVehicleCommand.ManufactureDate
+  id: ManufactureDate
+  parent: AlquilerMicroservicio.Application.Commands.CreateVehicleCommand
+  langs:
+  - csharp
+  - vb
+  name: ManufactureDate
+  nameWithType: CreateVehicleCommand.ManufactureDate
+  fullName: AlquilerMicroservicio.Application.Commands.CreateVehicleCommand.ManufactureDate
+  type: Property
+  source:
+    id: ManufactureDate
+    path: C:\Users\Tallara\Desktop\AlquilerMicroservicio\AlquilerMicroservicio.Application\Commands\CreateVehicleCommand.cs
+    startLine: 28
+  assemblies:
+  - AlquilerMicroservicio.Application
+  namespace: AlquilerMicroservicio.Application.Commands
+  summary: Fecha en la que salió de fábrica. Si es muy viejo, igual ni arranca.
+  example: []
+  syntax:
+    content: public DateTime ManufactureDate { get; set; }
+    parameters: []
+    return:
+      type: System.DateTime
+    content.vb: Public Property ManufactureDate As Date
+  overload: AlquilerMicroservicio.Application.Commands.CreateVehicleCommand.ManufactureDate*
+references:
+- uid: AlquilerMicroservicio.Application.Commands
+  commentId: N:AlquilerMicroservicio.Application.Commands
+  href: AlquilerMicroservicio.html
+  name: AlquilerMicroservicio.Application.Commands
+  nameWithType: AlquilerMicroservicio.Application.Commands
+  fullName: AlquilerMicroservicio.Application.Commands
+  spec.csharp:
+  - uid: AlquilerMicroservicio
+    name: AlquilerMicroservicio
+    href: AlquilerMicroservicio.html
+  - name: .
+  - uid: AlquilerMicroservicio.Application
+    name: Application
+    href: AlquilerMicroservicio.Application.html
+  - name: .
+  - uid: AlquilerMicroservicio.Application.Commands
+    name: Commands
+    href: AlquilerMicroservicio.Application.Commands.html
+  spec.vb:
+  - uid: AlquilerMicroservicio
+    name: AlquilerMicroservicio
+    href: AlquilerMicroservicio.html
+  - name: .
+  - uid: AlquilerMicroservicio.Application
+    name: Application
+    href: AlquilerMicroservicio.Application.html
+  - name: .
+  - uid: AlquilerMicroservicio.Application.Commands
+    name: Commands
+    href: AlquilerMicroservicio.Application.Commands.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: MediatR.IRequest{MediatR.Unit}
+  commentId: T:MediatR.IRequest{MediatR.Unit}
+  parent: MediatR
+  definition: MediatR.IRequest`1
+  name: IRequest<Unit>
+  nameWithType: IRequest<Unit>
+  fullName: MediatR.IRequest<MediatR.Unit>
+  nameWithType.vb: IRequest(Of Unit)
+  fullName.vb: MediatR.IRequest(Of MediatR.Unit)
+  name.vb: IRequest(Of Unit)
+  spec.csharp:
+  - uid: MediatR.IRequest`1
+    name: IRequest
+    isExternal: true
+  - name: <
+  - uid: MediatR.Unit
+    name: Unit
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: MediatR.IRequest`1
+    name: IRequest
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: MediatR.Unit
+    name: Unit
+    isExternal: true
+  - name: )
+- uid: MediatR.IBaseRequest
+  commentId: T:MediatR.IBaseRequest
+  parent: MediatR
+  isExternal: true
+  name: IBaseRequest
+  nameWithType: IBaseRequest
+  fullName: MediatR.IBaseRequest
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MediatR.IRequest`1
+  commentId: T:MediatR.IRequest`1
+  isExternal: true
+  name: IRequest<TResponse>
+  nameWithType: IRequest<TResponse>
+  fullName: MediatR.IRequest<TResponse>
+  nameWithType.vb: IRequest(Of TResponse)
+  fullName.vb: MediatR.IRequest(Of TResponse)
+  name.vb: IRequest(Of TResponse)
+  spec.csharp:
+  - uid: MediatR.IRequest`1
+    name: IRequest
+    isExternal: true
+  - name: <
+  - name: TResponse
+  - name: '>'
+  spec.vb:
+  - uid: MediatR.IRequest`1
+    name: IRequest
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResponse
+  - name: )
+- uid: MediatR
+  commentId: N:MediatR
+  isExternal: true
+  name: MediatR
+  nameWithType: MediatR
+  fullName: MediatR
+- uid: AlquilerMicroservicio.Application.Commands.CreateVehicleCommand.Id*
+  commentId: Overload:AlquilerMicroservicio.Application.Commands.CreateVehicleCommand.Id
+  href: AlquilerMicroservicio.Application.Commands.CreateVehicleCommand.html#AlquilerMicroservicio_Application_Commands_CreateVehicleCommand_Id
+  name: Id
+  nameWithType: CreateVehicleCommand.Id
+  fullName: AlquilerMicroservicio.Application.Commands.CreateVehicleCommand.Id
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: AlquilerMicroservicio.Application.Commands.CreateVehicleCommand.Brand*
+  commentId: Overload:AlquilerMicroservicio.Application.Commands.CreateVehicleCommand.Brand
+  href: AlquilerMicroservicio.Application.Commands.CreateVehicleCommand.html#AlquilerMicroservicio_Application_Commands_CreateVehicleCommand_Brand
+  name: Brand
+  nameWithType: CreateVehicleCommand.Brand
+  fullName: AlquilerMicroservicio.Application.Commands.CreateVehicleCommand.Brand
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: AlquilerMicroservicio.Application.Commands.CreateVehicleCommand.Model*
+  commentId: Overload:AlquilerMicroservicio.Application.Commands.CreateVehicleCommand.Model
+  href: AlquilerMicroservicio.Application.Commands.CreateVehicleCommand.html#AlquilerMicroservicio_Application_Commands_CreateVehicleCommand_Model
+  name: Model
+  nameWithType: CreateVehicleCommand.Model
+  fullName: AlquilerMicroservicio.Application.Commands.CreateVehicleCommand.Model
+- uid: AlquilerMicroservicio.Application.Commands.CreateVehicleCommand.ManufactureDate*
+  commentId: Overload:AlquilerMicroservicio.Application.Commands.CreateVehicleCommand.ManufactureDate
+  href: AlquilerMicroservicio.Application.Commands.CreateVehicleCommand.html#AlquilerMicroservicio_Application_Commands_CreateVehicleCommand_ManufactureDate
+  name: ManufactureDate
+  nameWithType: CreateVehicleCommand.ManufactureDate
+  fullName: AlquilerMicroservicio.Application.Commands.CreateVehicleCommand.ManufactureDate
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.datetime
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime
+  nameWithType.vb: Date
+  fullName.vb: Date
+  name.vb: Date

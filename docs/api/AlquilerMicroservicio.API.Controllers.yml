@@ -1,0 +1,30 @@
+### YamlMime:ManagedReference
+items:
+- uid: AlquilerMicroservicio.API.Controllers
+  commentId: N:AlquilerMicroservicio.API.Controllers
+  id: AlquilerMicroservicio.API.Controllers
+  children:
+  - AlquilerMicroservicio.API.Controllers.RentalsController
+  - AlquilerMicroservicio.API.Controllers.VehiclesController
+  langs:
+  - csharp
+  - vb
+  name: AlquilerMicroservicio.API.Controllers
+  nameWithType: AlquilerMicroservicio.API.Controllers
+  fullName: AlquilerMicroservicio.API.Controllers
+  type: Namespace
+  assemblies:
+  - AlquilerMicroservicio.API
+references:
+- uid: AlquilerMicroservicio.API.Controllers.RentalsController
+  commentId: T:AlquilerMicroservicio.API.Controllers.RentalsController
+  href: AlquilerMicroservicio.API.Controllers.RentalsController.html
+  name: RentalsController
+  nameWithType: RentalsController
+  fullName: AlquilerMicroservicio.API.Controllers.RentalsController
+- uid: AlquilerMicroservicio.API.Controllers.VehiclesController
+  commentId: T:AlquilerMicroservicio.API.Controllers.VehiclesController
+  href: AlquilerMicroservicio.API.Controllers.VehiclesController.html
+  name: VehiclesController
+  nameWithType: VehiclesController
+  fullName: AlquilerMicroservicio.API.Controllers.VehiclesController

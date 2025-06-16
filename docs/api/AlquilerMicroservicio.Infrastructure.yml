@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: AlquilerMicroservicio.Infrastructure
+  commentId: N:AlquilerMicroservicio.Infrastructure
+  id: AlquilerMicroservicio.Infrastructure
+  children:
+  - AlquilerMicroservicio.Infrastructure.InfrastructureServiceCollectionExtensions
+  langs:
+  - csharp
+  - vb
+  name: AlquilerMicroservicio.Infrastructure
+  nameWithType: AlquilerMicroservicio.Infrastructure
+  fullName: AlquilerMicroservicio.Infrastructure
+  type: Namespace
+  assemblies:
+  - AlquilerMicroservicio.Infrastructure
+references:
+- uid: AlquilerMicroservicio.Infrastructure.InfrastructureServiceCollectionExtensions
+  commentId: T:AlquilerMicroservicio.Infrastructure.InfrastructureServiceCollectionExtensions
+  href: AlquilerMicroservicio.Infrastructure.InfrastructureServiceCollectionExtensions.html
+  name: InfrastructureServiceCollectionExtensions
+  nameWithType: InfrastructureServiceCollectionExtensions
+  fullName: AlquilerMicroservicio.Infrastructure.InfrastructureServiceCollectionExtensions

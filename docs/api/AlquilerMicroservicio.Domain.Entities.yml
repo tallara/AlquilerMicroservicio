@@ -1,0 +1,62 @@
+### YamlMime:ManagedReference
+items:
+- uid: AlquilerMicroservicio.Domain.Entities
+  commentId: N:AlquilerMicroservicio.Domain.Entities
+  id: AlquilerMicroservicio.Domain.Entities
+  children:
+  - AlquilerMicroservicio.Domain.Entities.Rental
+  - AlquilerMicroservicio.Domain.Entities.Vehicle
+  langs:
+  - csharp
+  - vb
+  name: AlquilerMicroservicio.Domain.Entities
+  nameWithType: AlquilerMicroservicio.Domain.Entities
+  fullName: AlquilerMicroservicio.Domain.Entities
+  type: Namespace
+  assemblies:
+  - AlquilerMicroservicio.Domain
+references:
+- uid: AlquilerMicroservicio.Domain.Entities.Rental
+  commentId: T:AlquilerMicroservicio.Domain.Entities.Rental
+  parent: AlquilerMicroservicio.Domain.Entities
+  href: AlquilerMicroservicio.Domain.Entities.Rental.html
+  name: Rental
+  nameWithType: Rental
+  fullName: AlquilerMicroservicio.Domain.Entities.Rental
+- uid: AlquilerMicroservicio.Domain.Entities.Vehicle
+  commentId: T:AlquilerMicroservicio.Domain.Entities.Vehicle
+  parent: AlquilerMicroservicio.Domain.Entities
+  href: AlquilerMicroservicio.Domain.Entities.Vehicle.html
+  name: Vehicle
+  nameWithType: Vehicle
+  fullName: AlquilerMicroservicio.Domain.Entities.Vehicle
+- uid: AlquilerMicroservicio.Domain.Entities
+  commentId: N:AlquilerMicroservicio.Domain.Entities
+  href: AlquilerMicroservicio.html
+  name: AlquilerMicroservicio.Domain.Entities
+  nameWithType: AlquilerMicroservicio.Domain.Entities
+  fullName: AlquilerMicroservicio.Domain.Entities
+  spec.csharp:
+  - uid: AlquilerMicroservicio
+    name: AlquilerMicroservicio
+    href: AlquilerMicroservicio.html
+  - name: .
+  - uid: AlquilerMicroservicio.Domain
+    name: Domain
+    href: AlquilerMicroservicio.Domain.html
+  - name: .
+  - uid: AlquilerMicroservicio.Domain.Entities
+    name: Entities
+    href: AlquilerMicroservicio.Domain.Entities.html
+  spec.vb:
+  - uid: AlquilerMicroservicio
+    name: AlquilerMicroservicio
+    href: AlquilerMicroservicio.html
+  - name: .
+  - uid: AlquilerMicroservicio.Domain
+    name: Domain
+    href: AlquilerMicroservicio.Domain.html
+  - name: .
+  - uid: AlquilerMicroservicio.Domain.Entities
+    name: Entities
+    href: AlquilerMicroservicio.Domain.Entities.html

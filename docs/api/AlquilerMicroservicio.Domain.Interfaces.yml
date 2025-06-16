@@ -1,0 +1,62 @@
+### YamlMime:ManagedReference
+items:
+- uid: AlquilerMicroservicio.Domain.Interfaces
+  commentId: N:AlquilerMicroservicio.Domain.Interfaces
+  id: AlquilerMicroservicio.Domain.Interfaces
+  children:
+  - AlquilerMicroservicio.Domain.Interfaces.IRentalRepository
+  - AlquilerMicroservicio.Domain.Interfaces.IVehicleRepository
+  langs:
+  - csharp
+  - vb
+  name: AlquilerMicroservicio.Domain.Interfaces
+  nameWithType: AlquilerMicroservicio.Domain.Interfaces
+  fullName: AlquilerMicroservicio.Domain.Interfaces
+  type: Namespace
+  assemblies:
+  - AlquilerMicroservicio.Domain
+references:
+- uid: AlquilerMicroservicio.Domain.Interfaces.IRentalRepository
+  commentId: T:AlquilerMicroservicio.Domain.Interfaces.IRentalRepository
+  parent: AlquilerMicroservicio.Domain.Interfaces
+  href: AlquilerMicroservicio.Domain.Interfaces.IRentalRepository.html
+  name: IRentalRepository
+  nameWithType: IRentalRepository
+  fullName: AlquilerMicroservicio.Domain.Interfaces.IRentalRepository
+- uid: AlquilerMicroservicio.Domain.Interfaces.IVehicleRepository
+  commentId: T:AlquilerMicroservicio.Domain.Interfaces.IVehicleRepository
+  parent: AlquilerMicroservicio.Domain.Interfaces
+  href: AlquilerMicroservicio.Domain.Interfaces.IVehicleRepository.html
+  name: IVehicleRepository
+  nameWithType: IVehicleRepository
+  fullName: AlquilerMicroservicio.Domain.Interfaces.IVehicleRepository
+- uid: AlquilerMicroservicio.Domain.Interfaces
+  commentId: N:AlquilerMicroservicio.Domain.Interfaces
+  href: AlquilerMicroservicio.html
+  name: AlquilerMicroservicio.Domain.Interfaces
+  nameWithType: AlquilerMicroservicio.Domain.Interfaces
+  fullName: AlquilerMicroservicio.Domain.Interfaces
+  spec.csharp:
+  - uid: AlquilerMicroservicio
+    name: AlquilerMicroservicio
+    href: AlquilerMicroservicio.html
+  - name: .
+  - uid: AlquilerMicroservicio.Domain
+    name: Domain
+    href: AlquilerMicroservicio.Domain.html
+  - name: .
+  - uid: AlquilerMicroservicio.Domain.Interfaces
+    name: Interfaces
+    href: AlquilerMicroservicio.Domain.Interfaces.html
+  spec.vb:
+  - uid: AlquilerMicroservicio
+    name: AlquilerMicroservicio
+    href: AlquilerMicroservicio.html
+  - name: .
+  - uid: AlquilerMicroservicio.Domain
+    name: Domain
+    href: AlquilerMicroservicio.Domain.html
+  - name: .
+  - uid: AlquilerMicroservicio.Domain.Interfaces
+    name: Interfaces
+    href: AlquilerMicroservicio.Domain.Interfaces.html

@@ -1,0 +1,30 @@
+### YamlMime:ManagedReference
+items:
+- uid: AlquilerMicroservicio.Application
+  commentId: N:AlquilerMicroservicio.Application
+  id: AlquilerMicroservicio.Application
+  children:
+  - AlquilerMicroservicio.Application.ApplicationAssemblyReference
+  - AlquilerMicroservicio.Application.ApplicationServiceCollectionExtensions
+  langs:
+  - csharp
+  - vb
+  name: AlquilerMicroservicio.Application
+  nameWithType: AlquilerMicroservicio.Application
+  fullName: AlquilerMicroservicio.Application
+  type: Namespace
+  assemblies:
+  - AlquilerMicroservicio.Application
+references:
+- uid: AlquilerMicroservicio.Application.ApplicationAssemblyReference
+  commentId: T:AlquilerMicroservicio.Application.ApplicationAssemblyReference
+  href: AlquilerMicroservicio.Application.ApplicationAssemblyReference.html
+  name: ApplicationAssemblyReference
+  nameWithType: ApplicationAssemblyReference
+  fullName: AlquilerMicroservicio.Application.ApplicationAssemblyReference
+- uid: AlquilerMicroservicio.Application.ApplicationServiceCollectionExtensions
+  commentId: T:AlquilerMicroservicio.Application.ApplicationServiceCollectionExtensions
+  href: AlquilerMicroservicio.Application.ApplicationServiceCollectionExtensions.html
+  name: ApplicationServiceCollectionExtensions
+  nameWithType: ApplicationServiceCollectionExtensions
+  fullName: AlquilerMicroservicio.Application.ApplicationServiceCollectionExtensions

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Documentaci&#243;n del Microservicio de Alquiler de Veh&#237;culos | AlquilerMicroservicioDocs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Documentaci&#243;n del Microservicio de Alquiler de Veh&#237;culos | AlquilerMicroservicioDocs ">
+      
+      
+      <link rel="icon" href="favicon.ico">
+      <link rel="stylesheet" href="public/docfx.min.css">
+      <link rel="stylesheet" href="public/main.css">
+      <meta name="docfx:navrel" content="toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="index.html">
+            <img id="logo" class="svg" src="logo.svg" alt="AlquilerMicroservicioDocs">
+            AlquilerMicroservicioDocs
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+
+      <div class="content">
+        <div class="actionbar">
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="documentación-del-microservicio-de-alquiler-de-vehículos">Documentación del Microservicio de Alquiler de Vehículos</h1>
+
+<p>Este documento recoge toda la información técnica del microservicio <strong>AlquilerMicroservicio</strong>, incluyendo arquitectura, diseño, entidades, servicios y componentes de infraestructura. La documentación está pensada para desarrolladores que quieran entender el flujo del sistema o continuar el desarrollo.</p>
+<hr>
+<h2 id="arquitectura">Arquitectura</h2>
+<p>El proyecto está basado en los siguientes principios:</p>
+<ul>
+<li>Arquitectura Hexagonal</li>
+<li>DDD (Domain-Driven Design)</li>
+<li>MediatR para patrones CQRS y publicación de eventos</li>
+<li>MongoDB como sistema de persistencia</li>
+<li>Clean Code y buenas prácticas de diseño SOLID</li>
+</ul>
+<hr>
+<h2 id="estructura-del-proyecto">Estructura del Proyecto</h2>
+<pre><code class="lang-plaintext">AlquilerMicroservicio/
+├── API/                    --&gt; Entrada HTTP, controladores
+├── Application/           --&gt; Comandos, queries, handlers
+├── Domain/                --&gt; Entidades, interfaces, eventos
+├── Infrastructure/        --&gt; Repositorios, conexión Mongo, eventos
+├── tests/                 --&gt; Pruebas unitarias y funcionales
+└── docs/                  --&gt; Documentación generada (DocFX)
+</code></pre>
+<hr>
+<h2 id="componentes-clave">Componentes Clave</h2>
+<h3 id="api">API</h3>
+<p>Controladores REST que reciben las peticiones y lanzan comandos o consultas.</p>
+<h3 id="application">Application</h3>
+<p>Contiene la lógica de aplicación, con comandos, queries y sus respectivos handlers.</p>
+<h3 id="domain">Domain</h3>
+<p>Modelos del dominio (vehículos, alquileres), reglas de negocio y eventos de dominio.</p>
+<h3 id="infrastructure">Infrastructure</h3>
+<p>Implementación de los repositorios usando MongoDB, conexión con la base de datos y publicación de eventos con MediatR.</p>
+<hr>
+<h2 id="repositorios">Repositorios</h2>
+<ul>
+<li><code>IVehicleRepository</code> y <code>IRentalRepository</code> definen las operaciones de persistencia.</li>
+<li><code>MongoVehicleRepository</code> y <code>MongoRentalRepository</code> implementan la lógica real sobre MongoDB.</li>
+</ul>
+<hr>
+<h2 id="pruebas">Pruebas</h2>
+<p>La solución incluye pruebas por capas:</p>
+<ul>
+<li><strong>Unitarias</strong>: enfocadas en la lógica de dominio y handlers.</li>
+<li><strong>Funcionales</strong>: validan escenarios completos de negocio.</li>
+<li><strong>Infraestructura</strong>: comprueban integración real con MongoDB.</li>
+</ul>
+<hr>
+<h2 id="configuración">Configuración</h2>
+<p>Ejemplo de configuración mínima en <code>appsettings.json</code>:</p>
+<pre><code class="lang-json">{
+  &quot;MongoDb&quot;: {
+    &quot;ConnectionString&quot;: &quot;mongodb://localhost:27017&quot;,
+    &quot;Database&quot;: &quot;AlquilerDb&quot;
+  }
+}
+</code></pre>
+<hr>
+<h2 id="generación-de-documentación">Generación de Documentación</h2>
+<p>Esta documentación se genera automáticamente con [DocFX]. Para generarla localmente:</p>
+<pre><code class="lang-bash">docfx docfx.json --serve
+</code></pre>
+<p>Para generar un PDF:</p>
+<pre><code class="lang-bash">docfx docfx.json --pdf
+</code></pre>
+<hr>
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+### YamlMime:ManagedReference
+items:
+- uid: AlquilerMicroservicio.Application.Handlers
+  commentId: N:AlquilerMicroservicio.Application.Handlers
+  id: AlquilerMicroservicio.Application.Handlers
+  children:
+  - AlquilerMicroservicio.Application.Handlers.CreateVehicleCommandHandler
+  - AlquilerMicroservicio.Application.Handlers.GetAvailableVehiclesQueryHandler
+  - AlquilerMicroservicio.Application.Handlers.RentVehicleCommandHandler
+  - AlquilerMicroservicio.Application.Handlers.ReturnVehicleCommandHandler
+  langs:
+  - csharp
+  - vb
+  name: AlquilerMicroservicio.Application.Handlers
+  nameWithType: AlquilerMicroservicio.Application.Handlers
+  fullName: AlquilerMicroservicio.Application.Handlers
+  type: Namespace
+  assemblies:
+  - AlquilerMicroservicio.Application
+references:
+- uid: AlquilerMicroservicio.Application.Handlers.CreateVehicleCommandHandler
+  commentId: T:AlquilerMicroservicio.Application.Handlers.CreateVehicleCommandHandler
+  href: AlquilerMicroservicio.Application.Handlers.CreateVehicleCommandHandler.html
+  name: CreateVehicleCommandHandler
+  nameWithType: CreateVehicleCommandHandler
+  fullName: AlquilerMicroservicio.Application.Handlers.CreateVehicleCommandHandler
+- uid: AlquilerMicroservicio.Application.Handlers.GetAvailableVehiclesQueryHandler
+  commentId: T:AlquilerMicroservicio.Application.Handlers.GetAvailableVehiclesQueryHandler
+  href: AlquilerMicroservicio.Application.Handlers.GetAvailableVehiclesQueryHandler.html
+  name: GetAvailableVehiclesQueryHandler
+  nameWithType: GetAvailableVehiclesQueryHandler
+  fullName: AlquilerMicroservicio.Application.Handlers.GetAvailableVehiclesQueryHandler
+- uid: AlquilerMicroservicio.Application.Handlers.RentVehicleCommandHandler
+  commentId: T:AlquilerMicroservicio.Application.Handlers.RentVehicleCommandHandler
+  href: AlquilerMicroservicio.Application.Handlers.RentVehicleCommandHandler.html
+  name: RentVehicleCommandHandler
+  nameWithType: RentVehicleCommandHandler
+  fullName: AlquilerMicroservicio.Application.Handlers.RentVehicleCommandHandler
+- uid: AlquilerMicroservicio.Application.Handlers.ReturnVehicleCommandHandler
+  commentId: T:AlquilerMicroservicio.Application.Handlers.ReturnVehicleCommandHandler
+  href: AlquilerMicroservicio.Application.Handlers.ReturnVehicleCommandHandler.html
+  name: ReturnVehicleCommandHandler
+  nameWithType: ReturnVehicleCommandHandler
+  fullName: AlquilerMicroservicio.Application.Handlers.ReturnVehicleCommandHandler

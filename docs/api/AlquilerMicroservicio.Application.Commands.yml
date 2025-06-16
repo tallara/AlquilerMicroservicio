@@ -1,0 +1,70 @@
+### YamlMime:ManagedReference
+items:
+- uid: AlquilerMicroservicio.Application.Commands
+  commentId: N:AlquilerMicroservicio.Application.Commands
+  id: AlquilerMicroservicio.Application.Commands
+  children:
+  - AlquilerMicroservicio.Application.Commands.CreateVehicleCommand
+  - AlquilerMicroservicio.Application.Commands.RentVehicleCommand
+  - AlquilerMicroservicio.Application.Commands.ReturnVehicleCommand
+  langs:
+  - csharp
+  - vb
+  name: AlquilerMicroservicio.Application.Commands
+  nameWithType: AlquilerMicroservicio.Application.Commands
+  fullName: AlquilerMicroservicio.Application.Commands
+  type: Namespace
+  assemblies:
+  - AlquilerMicroservicio.Application
+references:
+- uid: AlquilerMicroservicio.Application.Commands.CreateVehicleCommand
+  commentId: T:AlquilerMicroservicio.Application.Commands.CreateVehicleCommand
+  parent: AlquilerMicroservicio.Application.Commands
+  href: AlquilerMicroservicio.Application.Commands.CreateVehicleCommand.html
+  name: CreateVehicleCommand
+  nameWithType: CreateVehicleCommand
+  fullName: AlquilerMicroservicio.Application.Commands.CreateVehicleCommand
+- uid: AlquilerMicroservicio.Application.Commands.RentVehicleCommand
+  commentId: T:AlquilerMicroservicio.Application.Commands.RentVehicleCommand
+  parent: AlquilerMicroservicio.Application.Commands
+  href: AlquilerMicroservicio.Application.Commands.RentVehicleCommand.html
+  name: RentVehicleCommand
+  nameWithType: RentVehicleCommand
+  fullName: AlquilerMicroservicio.Application.Commands.RentVehicleCommand
+- uid: AlquilerMicroservicio.Application.Commands.ReturnVehicleCommand
+  commentId: T:AlquilerMicroservicio.Application.Commands.ReturnVehicleCommand
+  parent: AlquilerMicroservicio.Application.Commands
+  href: AlquilerMicroservicio.Application.Commands.ReturnVehicleCommand.html
+  name: ReturnVehicleCommand
+  nameWithType: ReturnVehicleCommand
+  fullName: AlquilerMicroservicio.Application.Commands.ReturnVehicleCommand
+- uid: AlquilerMicroservicio.Application.Commands
+  commentId: N:AlquilerMicroservicio.Application.Commands
+  href: AlquilerMicroservicio.html
+  name: AlquilerMicroservicio.Application.Commands
+  nameWithType: AlquilerMicroservicio.Application.Commands
+  fullName: AlquilerMicroservicio.Application.Commands
+  spec.csharp:
+  - uid: AlquilerMicroservicio
+    name: AlquilerMicroservicio
+    href: AlquilerMicroservicio.html
+  - name: .
+  - uid: AlquilerMicroservicio.Application
+    name: Application
+    href: AlquilerMicroservicio.Application.html
+  - name: .
+  - uid: AlquilerMicroservicio.Application.Commands
+    name: Commands
+    href: AlquilerMicroservicio.Application.Commands.html
+  spec.vb:
+  - uid: AlquilerMicroservicio
+    name: AlquilerMicroservicio
+    href: AlquilerMicroservicio.html
+  - name: .
+  - uid: AlquilerMicroservicio.Application
+    name: Application
+    href: AlquilerMicroservicio.Application.html
+  - name: .
+  - uid: AlquilerMicroservicio.Application.Commands
+    name: Commands
+    href: AlquilerMicroservicio.Application.Commands.html

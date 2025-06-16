@@ -1,0 +1,616 @@
+{
+  "source_base_path": "C:/Users/Tallara/Desktop/AlquilerMicroservicio/docs",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AlquilerMicroservicio.API.Controllers.RentalsController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AlquilerMicroservicio.API.Controllers.RentalsController.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AlquilerMicroservicio.API.Controllers.RentalsController",
+      "Summary": "<p sourcefile=\"api/AlquilerMicroservicio.API.Controllers.RentalsController.yml\" sourcestartlinenumber=\"1\">Controlador HTTP que gestiona el alquiler y la devoluc d vehiculos, manda los comandos al mediador pa q los procese.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AlquilerMicroservicio.API.Controllers.VehiclesController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AlquilerMicroservicio.API.Controllers.VehiclesController.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AlquilerMicroservicio.API.Controllers.VehiclesController",
+      "Summary": "<p sourcefile=\"api/AlquilerMicroservicio.API.Controllers.VehiclesController.yml\" sourcestartlinenumber=\"1\">Controlador que gestiona los vehículos. Aquí se crean y se listan los que están libres.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AlquilerMicroservicio.API.Controllers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AlquilerMicroservicio.API.Controllers.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AlquilerMicroservicio.API.Controllers",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AlquilerMicroservicio.Application.ApplicationAssemblyReference.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AlquilerMicroservicio.Application.ApplicationAssemblyReference.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AlquilerMicroservicio.Application.ApplicationAssemblyReference",
+      "Summary": "<p sourcefile=\"api/AlquilerMicroservicio.Application.ApplicationAssemblyReference.yml\" sourcestartlinenumber=\"1\">Referencia al ensamblado de la capa de aplicación. Se usa para registrar cosas como los handlers sin volverse loco buscando tipos.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AlquilerMicroservicio.Application.ApplicationServiceCollectionExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AlquilerMicroservicio.Application.ApplicationServiceCollectionExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AlquilerMicroservicio.Application.ApplicationServiceCollectionExtensions",
+      "Summary": "<p sourcefile=\"api/AlquilerMicroservicio.Application.ApplicationServiceCollectionExtensions.yml\" sourcestartlinenumber=\"1\">Clase de extensión que mete todo lo necesario de la capa de aplicación en el contenedor de dependencias.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AlquilerMicroservicio.Application.Commands.CreateVehicleCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AlquilerMicroservicio.Application.Commands.CreateVehicleCommand.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AlquilerMicroservicio.Application.Commands.CreateVehicleCommand",
+      "Summary": "<p sourcefile=\"api/AlquilerMicroservicio.Application.Commands.CreateVehicleCommand.yml\" sourcestartlinenumber=\"1\">Comando para crear un vehículo. Se lanza y que el handler se encargue del marrón.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AlquilerMicroservicio.Application.Commands.RentVehicleCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AlquilerMicroservicio.Application.Commands.RentVehicleCommand.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AlquilerMicroservicio.Application.Commands.RentVehicleCommand",
+      "Summary": "<p sourcefile=\"api/AlquilerMicroservicio.Application.Commands.RentVehicleCommand.yml\" sourcestartlinenumber=\"1\">Comando que se lanza cuando alguien quiere pillar un vehículo. Básicamente, reserva el trasto.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AlquilerMicroservicio.Application.Commands.ReturnVehicleCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AlquilerMicroservicio.Application.Commands.ReturnVehicleCommand.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AlquilerMicroservicio.Application.Commands.ReturnVehicleCommand",
+      "Summary": "<p sourcefile=\"api/AlquilerMicroservicio.Application.Commands.ReturnVehicleCommand.yml\" sourcestartlinenumber=\"1\">Comando que se lanza cuando el cliente trae el coche de vuelta.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AlquilerMicroservicio.Application.Commands.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AlquilerMicroservicio.Application.Commands.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AlquilerMicroservicio.Application.Commands",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AlquilerMicroservicio.Application.EventHandlers.VehicleRentedDomainEventHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AlquilerMicroservicio.Application.EventHandlers.VehicleRentedDomainEventHandler.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AlquilerMicroservicio.Application.EventHandlers.VehicleRentedDomainEventHandler",
+      "Summary": "<p sourcefile=\"api/AlquilerMicroservicio.Application.EventHandlers.VehicleRentedDomainEventHandler.yml\" sourcestartlinenumber=\"1\">Manejador que se ejecuta cuando se alquila un vehículo. Básicamente, deja constancia del lío en los logs.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AlquilerMicroservicio.Application.EventHandlers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AlquilerMicroservicio.Application.EventHandlers.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AlquilerMicroservicio.Application.EventHandlers",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AlquilerMicroservicio.Application.Handlers.CreateVehicleCommandHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AlquilerMicroservicio.Application.Handlers.CreateVehicleCommandHandler.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AlquilerMicroservicio.Application.Handlers.CreateVehicleCommandHandler",
+      "Summary": "<p sourcefile=\"api/AlquilerMicroservicio.Application.Handlers.CreateVehicleCommandHandler.yml\" sourcestartlinenumber=\"1\">Handler que se encarga de registrar un vehículo nuevo. Lo mete en el repo y a otra cosa.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AlquilerMicroservicio.Application.Handlers.GetAvailableVehiclesQueryHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AlquilerMicroservicio.Application.Handlers.GetAvailableVehiclesQueryHandler.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AlquilerMicroservicio.Application.Handlers.GetAvailableVehiclesQueryHandler",
+      "Summary": "<p sourcefile=\"api/AlquilerMicroservicio.Application.Handlers.GetAvailableVehiclesQueryHandler.yml\" sourcestartlinenumber=\"1\">Handler que se encarga de buscar los vehículos que están libres.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AlquilerMicroservicio.Application.Handlers.RentVehicleCommandHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AlquilerMicroservicio.Application.Handlers.RentVehicleCommandHandler.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AlquilerMicroservicio.Application.Handlers.RentVehicleCommandHandler",
+      "Summary": "<p sourcefile=\"api/AlquilerMicroservicio.Application.Handlers.RentVehicleCommandHandler.yml\" sourcestartlinenumber=\"1\">Handler que se encarga de alquilar un vehículo: usa el dominio, guarda lo que haya que guardar y lanza eventos.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AlquilerMicroservicio.Application.Handlers.ReturnVehicleCommandHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AlquilerMicroservicio.Application.Handlers.ReturnVehicleCommandHandler.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AlquilerMicroservicio.Application.Handlers.ReturnVehicleCommandHandler",
+      "Summary": "<p sourcefile=\"api/AlquilerMicroservicio.Application.Handlers.ReturnVehicleCommandHandler.yml\" sourcestartlinenumber=\"1\">Handler que gestiona la devolución del vehículo. Revisa el alquiler y marca todo como devuelto.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AlquilerMicroservicio.Application.Handlers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AlquilerMicroservicio.Application.Handlers.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AlquilerMicroservicio.Application.Handlers",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AlquilerMicroservicio.Application.Queries.GetAvailableVehiclesQuery.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AlquilerMicroservicio.Application.Queries.GetAvailableVehiclesQuery.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AlquilerMicroservicio.Application.Queries.GetAvailableVehiclesQuery",
+      "Summary": "<p sourcefile=\"api/AlquilerMicroservicio.Application.Queries.GetAvailableVehiclesQuery.yml\" sourcestartlinenumber=\"1\">Query que pide la lista de vehículos disponibles.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AlquilerMicroservicio.Application.Queries.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AlquilerMicroservicio.Application.Queries.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AlquilerMicroservicio.Application.Queries",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AlquilerMicroservicio.Application.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AlquilerMicroservicio.Application.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AlquilerMicroservicio.Application",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AlquilerMicroservicio.Domain.Entities.Rental.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AlquilerMicroservicio.Domain.Entities.Rental.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AlquilerMicroservicio.Domain.Entities.Rental",
+      "Summary": "<p sourcefile=\"api/AlquilerMicroservicio.Domain.Entities.Rental.yml\" sourcestartlinenumber=\"1\">Entidad que representa un alquiler. Guarda quién pilló qué coche, cuándo lo hizo y si ya lo devolvió o sigue alquilado.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AlquilerMicroservicio.Domain.Entities.Vehicle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AlquilerMicroservicio.Domain.Entities.Vehicle.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AlquilerMicroservicio.Domain.Entities.Vehicle",
+      "Summary": "<p sourcefile=\"api/AlquilerMicroservicio.Domain.Entities.Vehicle.yml\" sourcestartlinenumber=\"1\">Entidad que representa un vehículo con su información básica y estado de alquiler.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AlquilerMicroservicio.Domain.Entities.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AlquilerMicroservicio.Domain.Entities.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AlquilerMicroservicio.Domain.Entities",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AlquilerMicroservicio.Domain.Events.VehicleRentedDomainEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AlquilerMicroservicio.Domain.Events.VehicleRentedDomainEvent.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AlquilerMicroservicio.Domain.Events.VehicleRentedDomainEvent",
+      "Summary": "<p sourcefile=\"api/AlquilerMicroservicio.Domain.Events.VehicleRentedDomainEvent.yml\" sourcestartlinenumber=\"1\">Evento de dominio que se lanza cuando un vehículo ha sido alquilado.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AlquilerMicroservicio.Domain.Events.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AlquilerMicroservicio.Domain.Events.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AlquilerMicroservicio.Domain.Events",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AlquilerMicroservicio.Domain.Interfaces.IRentalRepository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AlquilerMicroservicio.Domain.Interfaces.IRentalRepository.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AlquilerMicroservicio.Domain.Interfaces.IRentalRepository",
+      "Summary": "<p sourcefile=\"api/AlquilerMicroservicio.Domain.Interfaces.IRentalRepository.yml\" sourcestartlinenumber=\"1\">Contrato para el repositorio de alquileres. Define las operaciones básicas sobre la entidad Rental.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AlquilerMicroservicio.Domain.Interfaces.IVehicleRepository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AlquilerMicroservicio.Domain.Interfaces.IVehicleRepository.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AlquilerMicroservicio.Domain.Interfaces.IVehicleRepository",
+      "Summary": "<p sourcefile=\"api/AlquilerMicroservicio.Domain.Interfaces.IVehicleRepository.yml\" sourcestartlinenumber=\"1\">Contrato para el repositorio de vehiculos. Define las operaciones permitidas sobre la entidad Vehicle.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AlquilerMicroservicio.Domain.Interfaces.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AlquilerMicroservicio.Domain.Interfaces.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AlquilerMicroservicio.Domain.Interfaces",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AlquilerMicroservicio.Domain.Services.RentalDomainService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AlquilerMicroservicio.Domain.Services.RentalDomainService.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AlquilerMicroservicio.Domain.Services.RentalDomainService",
+      "Summary": "<p sourcefile=\"api/AlquilerMicroservicio.Domain.Services.RentalDomainService.yml\" sourcestartlinenumber=\"1\">Servicio de dominio que gestiona la lógica para alquilar un vehículo.\nValida las reglas del negocio y genera el evento correspondiente.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AlquilerMicroservicio.Domain.Services.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AlquilerMicroservicio.Domain.Services.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AlquilerMicroservicio.Domain.Services",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AlquilerMicroservicio.Infrastructure.Events.DomainEventDispatcher.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AlquilerMicroservicio.Infrastructure.Events.DomainEventDispatcher.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AlquilerMicroservicio.Infrastructure.Events.DomainEventDispatcher",
+      "Summary": "<p sourcefile=\"api/AlquilerMicroservicio.Infrastructure.Events.DomainEventDispatcher.yml\" sourcestartlinenumber=\"1\">Implementación del despachador de eventos de dominio que utiliza MediatR para publicar los eventos.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AlquilerMicroservicio.Infrastructure.Events.IDomainEventDispatcher.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AlquilerMicroservicio.Infrastructure.Events.IDomainEventDispatcher.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AlquilerMicroservicio.Infrastructure.Events.IDomainEventDispatcher",
+      "Summary": "<p sourcefile=\"api/AlquilerMicroservicio.Infrastructure.Events.IDomainEventDispatcher.yml\" sourcestartlinenumber=\"1\">Interfaz para despachar eventos de dominio usando un mecanismo externo.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AlquilerMicroservicio.Infrastructure.Events.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AlquilerMicroservicio.Infrastructure.Events.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AlquilerMicroservicio.Infrastructure.Events",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AlquilerMicroservicio.Infrastructure.InfrastructureServiceCollectionExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AlquilerMicroservicio.Infrastructure.InfrastructureServiceCollectionExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AlquilerMicroservicio.Infrastructure.InfrastructureServiceCollectionExtensions",
+      "Summary": "<p sourcefile=\"api/AlquilerMicroservicio.Infrastructure.InfrastructureServiceCollectionExtensions.yml\" sourcestartlinenumber=\"1\">Clase de extensión que registra los servicios de infraestructura en el contenedor de dependencias.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AlquilerMicroservicio.Infrastructure.Repositories.MongoRentalRepository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AlquilerMicroservicio.Infrastructure.Repositories.MongoRentalRepository.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AlquilerMicroservicio.Infrastructure.Repositories.MongoRentalRepository",
+      "Summary": "<p sourcefile=\"api/AlquilerMicroservicio.Infrastructure.Repositories.MongoRentalRepository.yml\" sourcestartlinenumber=\"1\">Implementación del repositorio de alquileres usando MongoDB como almacenamiento.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AlquilerMicroservicio.Infrastructure.Repositories.MongoVehicleRepository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AlquilerMicroservicio.Infrastructure.Repositories.MongoVehicleRepository.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AlquilerMicroservicio.Infrastructure.Repositories.MongoVehicleRepository",
+      "Summary": "<p sourcefile=\"api/AlquilerMicroservicio.Infrastructure.Repositories.MongoVehicleRepository.yml\" sourcestartlinenumber=\"1\">Implementación del repositorio de vehículos usando MongoDB como base de datos.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AlquilerMicroservicio.Infrastructure.Repositories.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AlquilerMicroservicio.Infrastructure.Repositories.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AlquilerMicroservicio.Infrastructure.Repositories",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AlquilerMicroservicio.Infrastructure.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AlquilerMicroservicio.Infrastructure.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AlquilerMicroservicio.Infrastructure",
+      "Summary": null
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/getting-started.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/getting-started.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/introduction.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/introduction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "docs/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/toc.html"
+        },
+        ".json": {
+          "relative_path": "docs/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "verificacion-docker.md",
+      "output": {
+        ".html": {
+          "relative_path": "verificacion-docker.html"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+### YamlMime:ManagedReference
+items:
+- uid: AlquilerMicroservicio.Infrastructure.Repositories
+  commentId: N:AlquilerMicroservicio.Infrastructure.Repositories
+  id: AlquilerMicroservicio.Infrastructure.Repositories
+  children:
+  - AlquilerMicroservicio.Infrastructure.Repositories.MongoRentalRepository
+  - AlquilerMicroservicio.Infrastructure.Repositories.MongoVehicleRepository
+  langs:
+  - csharp
+  - vb
+  name: AlquilerMicroservicio.Infrastructure.Repositories
+  nameWithType: AlquilerMicroservicio.Infrastructure.Repositories
+  fullName: AlquilerMicroservicio.Infrastructure.Repositories
+  type: Namespace
+  assemblies:
+  - AlquilerMicroservicio.Infrastructure
+references:
+- uid: AlquilerMicroservicio.Infrastructure.Repositories.MongoRentalRepository
+  commentId: T:AlquilerMicroservicio.Infrastructure.Repositories.MongoRentalRepository
+  href: AlquilerMicroservicio.Infrastructure.Repositories.MongoRentalRepository.html
+  name: MongoRentalRepository
+  nameWithType: MongoRentalRepository
+  fullName: AlquilerMicroservicio.Infrastructure.Repositories.MongoRentalRepository
+- uid: AlquilerMicroservicio.Infrastructure.Repositories.MongoVehicleRepository
+  commentId: T:AlquilerMicroservicio.Infrastructure.Repositories.MongoVehicleRepository
+  href: AlquilerMicroservicio.Infrastructure.Repositories.MongoVehicleRepository.html
+  name: MongoVehicleRepository
+  nameWithType: MongoVehicleRepository
+  fullName: AlquilerMicroservicio.Infrastructure.Repositories.MongoVehicleRepository

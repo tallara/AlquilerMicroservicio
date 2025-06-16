@@ -1,0 +1,54 @@
+### YamlMime:ManagedReference
+items:
+- uid: AlquilerMicroservicio.Domain.Events
+  commentId: N:AlquilerMicroservicio.Domain.Events
+  id: AlquilerMicroservicio.Domain.Events
+  children:
+  - AlquilerMicroservicio.Domain.Events.VehicleRentedDomainEvent
+  langs:
+  - csharp
+  - vb
+  name: AlquilerMicroservicio.Domain.Events
+  nameWithType: AlquilerMicroservicio.Domain.Events
+  fullName: AlquilerMicroservicio.Domain.Events
+  type: Namespace
+  assemblies:
+  - AlquilerMicroservicio.Domain
+references:
+- uid: AlquilerMicroservicio.Domain.Events.VehicleRentedDomainEvent
+  commentId: T:AlquilerMicroservicio.Domain.Events.VehicleRentedDomainEvent
+  parent: AlquilerMicroservicio.Domain.Events
+  href: AlquilerMicroservicio.Domain.Events.VehicleRentedDomainEvent.html
+  name: VehicleRentedDomainEvent
+  nameWithType: VehicleRentedDomainEvent
+  fullName: AlquilerMicroservicio.Domain.Events.VehicleRentedDomainEvent
+- uid: AlquilerMicroservicio.Domain.Events
+  commentId: N:AlquilerMicroservicio.Domain.Events
+  href: AlquilerMicroservicio.html
+  name: AlquilerMicroservicio.Domain.Events
+  nameWithType: AlquilerMicroservicio.Domain.Events
+  fullName: AlquilerMicroservicio.Domain.Events
+  spec.csharp:
+  - uid: AlquilerMicroservicio
+    name: AlquilerMicroservicio
+    href: AlquilerMicroservicio.html
+  - name: .
+  - uid: AlquilerMicroservicio.Domain
+    name: Domain
+    href: AlquilerMicroservicio.Domain.html
+  - name: .
+  - uid: AlquilerMicroservicio.Domain.Events
+    name: Events
+    href: AlquilerMicroservicio.Domain.Events.html
+  spec.vb:
+  - uid: AlquilerMicroservicio
+    name: AlquilerMicroservicio
+    href: AlquilerMicroservicio.html
+  - name: .
+  - uid: AlquilerMicroservicio.Domain
+    name: Domain
+    href: AlquilerMicroservicio.Domain.html
+  - name: .
+  - uid: AlquilerMicroservicio.Domain.Events
+    name: Events
+    href: AlquilerMicroservicio.Domain.Events.html

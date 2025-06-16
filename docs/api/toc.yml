@@ -1,0 +1,127 @@
+### YamlMime:TableOfContent
+items:
+- uid: AlquilerMicroservicio.API.Controllers
+  name: AlquilerMicroservicio.API.Controllers
+  type: Namespace
+  items:
+  - uid: AlquilerMicroservicio.API.Controllers.RentalsController
+    name: RentalsController
+    type: Class
+  - uid: AlquilerMicroservicio.API.Controllers.VehiclesController
+    name: VehiclesController
+    type: Class
+- uid: AlquilerMicroservicio.Application
+  name: AlquilerMicroservicio.Application
+  type: Namespace
+  items:
+  - uid: AlquilerMicroservicio.Application.ApplicationAssemblyReference
+    name: ApplicationAssemblyReference
+    type: Class
+  - uid: AlquilerMicroservicio.Application.ApplicationServiceCollectionExtensions
+    name: ApplicationServiceCollectionExtensions
+    type: Class
+- uid: AlquilerMicroservicio.Application.Commands
+  name: AlquilerMicroservicio.Application.Commands
+  type: Namespace
+  items:
+  - uid: AlquilerMicroservicio.Application.Commands.CreateVehicleCommand
+    name: CreateVehicleCommand
+    type: Class
+  - uid: AlquilerMicroservicio.Application.Commands.RentVehicleCommand
+    name: RentVehicleCommand
+    type: Class
+  - uid: AlquilerMicroservicio.Application.Commands.ReturnVehicleCommand
+    name: ReturnVehicleCommand
+    type: Class
+- uid: AlquilerMicroservicio.Application.EventHandlers
+  name: AlquilerMicroservicio.Application.EventHandlers
+  type: Namespace
+  items:
+  - uid: AlquilerMicroservicio.Application.EventHandlers.VehicleRentedDomainEventHandler
+    name: VehicleRentedDomainEventHandler
+    type: Class
+- uid: AlquilerMicroservicio.Application.Handlers
+  name: AlquilerMicroservicio.Application.Handlers
+  type: Namespace
+  items:
+  - uid: AlquilerMicroservicio.Application.Handlers.CreateVehicleCommandHandler
+    name: CreateVehicleCommandHandler
+    type: Class
+  - uid: AlquilerMicroservicio.Application.Handlers.GetAvailableVehiclesQueryHandler
+    name: GetAvailableVehiclesQueryHandler
+    type: Class
+  - uid: AlquilerMicroservicio.Application.Handlers.RentVehicleCommandHandler
+    name: RentVehicleCommandHandler
+    type: Class
+  - uid: AlquilerMicroservicio.Application.Handlers.ReturnVehicleCommandHandler
+    name: ReturnVehicleCommandHandler
+    type: Class
+- uid: AlquilerMicroservicio.Application.Queries
+  name: AlquilerMicroservicio.Application.Queries
+  type: Namespace
+  items:
+  - uid: AlquilerMicroservicio.Application.Queries.GetAvailableVehiclesQuery
+    name: GetAvailableVehiclesQuery
+    type: Class
+- uid: AlquilerMicroservicio.Domain.Entities
+  name: AlquilerMicroservicio.Domain.Entities
+  type: Namespace
+  items:
+  - uid: AlquilerMicroservicio.Domain.Entities.Rental
+    name: Rental
+    type: Class
+  - uid: AlquilerMicroservicio.Domain.Entities.Vehicle
+    name: Vehicle
+    type: Class
+- uid: AlquilerMicroservicio.Domain.Events
+  name: AlquilerMicroservicio.Domain.Events
+  type: Namespace
+  items:
+  - uid: AlquilerMicroservicio.Domain.Events.VehicleRentedDomainEvent
+    name: VehicleRentedDomainEvent
+    type: Class
+- uid: AlquilerMicroservicio.Domain.Interfaces
+  name: AlquilerMicroservicio.Domain.Interfaces
+  type: Namespace
+  items:
+  - uid: AlquilerMicroservicio.Domain.Interfaces.IRentalRepository
+    name: IRentalRepository
+    type: Interface
+  - uid: AlquilerMicroservicio.Domain.Interfaces.IVehicleRepository
+    name: IVehicleRepository
+    type: Interface
+- uid: AlquilerMicroservicio.Domain.Services
+  name: AlquilerMicroservicio.Domain.Services
+  type: Namespace
+  items:
+  - uid: AlquilerMicroservicio.Domain.Services.RentalDomainService
+    name: RentalDomainService
+    type: Class
+- uid: AlquilerMicroservicio.Infrastructure
+  name: AlquilerMicroservicio.Infrastructure
+  type: Namespace
+  items:
+  - uid: AlquilerMicroservicio.Infrastructure.InfrastructureServiceCollectionExtensions
+    name: InfrastructureServiceCollectionExtensions
+    type: Class
+- uid: AlquilerMicroservicio.Infrastructure.Events
+  name: AlquilerMicroservicio.Infrastructure.Events
+  type: Namespace
+  items:
+  - uid: AlquilerMicroservicio.Infrastructure.Events.DomainEventDispatcher
+    name: DomainEventDispatcher
+    type: Class
+  - uid: AlquilerMicroservicio.Infrastructure.Events.IDomainEventDispatcher
+    name: IDomainEventDispatcher
+    type: Interface
+- uid: AlquilerMicroservicio.Infrastructure.Repositories
+  name: AlquilerMicroservicio.Infrastructure.Repositories
+  type: Namespace
+  items:
+  - uid: AlquilerMicroservicio.Infrastructure.Repositories.MongoRentalRepository
+    name: MongoRentalRepository
+    type: Class
+  - uid: AlquilerMicroservicio.Infrastructure.Repositories.MongoVehicleRepository
+    name: MongoVehicleRepository
+    type: Class
+memberLayout: SamePage

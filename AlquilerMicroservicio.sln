@@ -1,0 +1,84 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31912.275
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlquilerMicroservicio.FunctionalTests", "tests\AlquilerMicroservicio.FunctionalTests\AlquilerMicroservicio.FunctionalTests.csproj", "{BC9A27AA-EE88-44B0-86BD-553F4716E26B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlquilerMicroservicio.InfrastructureTests", "tests\AlquilerMicroservicio.InfrastructureTests\AlquilerMicroservicio.InfrastructureTests.csproj", "{8B5AE75F-05BD-4739-8C1B-021A9E8D4B49}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlquilerMicroservicio.UnitTests", "tests\AlquilerMicroservicio.UnitTests\AlquilerMicroservicio.UnitTests.csproj", "{256B62B3-03F4-44C6-B186-A6E7146FCBDC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{E5C20C9F-01B4-4B54-9D6F-716B759DB366}"
+	ProjectSection(SolutionItems) = preProject
+		docs\docfx.json = docs\docfx.json
+		docs\index.md = docs\index.md
+		docs\toc.yml = docs\toc.yml
+		docs\verificacion-docker.md = docs\verificacion-docker.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Elementos de la solución", "Elementos de la solución", "{D107F4C8-89CC-BEA8-D3D7-CA6B7733353D}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yml = docker-compose.yml
+		Dockerfile = Dockerfile
+		dockerignore = dockerignore
+		global.json = global.json
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlquilerMicroservicio.API", "src\AlquilerMicroservicio.API\AlquilerMicroservicio.API.csproj", "{EBB17FED-F7DA-41FE-11D9-6C360133291D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlquilerMicroservicio.Application", "src\AlquilerMicroservicio.Application\AlquilerMicroservicio.Application.csproj", "{90D542A9-9FFD-F017-24DB-9B8B829B889B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlquilerMicroservicio.Domain", "src\AlquilerMicroservicio.Domain\AlquilerMicroservicio.Domain.csproj", "{52B0E121-4049-F31D-C73B-A0240A6C2C93}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlquilerMicroservicio.Infrastructure", "src\AlquilerMicroservicio.Infrastructure\AlquilerMicroservicio.Infrastructure.csproj", "{4A6270B3-80B1-513E-4C41-05D3039D2854}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BC9A27AA-EE88-44B0-86BD-553F4716E26B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC9A27AA-EE88-44B0-86BD-553F4716E26B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC9A27AA-EE88-44B0-86BD-553F4716E26B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC9A27AA-EE88-44B0-86BD-553F4716E26B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B5AE75F-05BD-4739-8C1B-021A9E8D4B49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B5AE75F-05BD-4739-8C1B-021A9E8D4B49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B5AE75F-05BD-4739-8C1B-021A9E8D4B49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B5AE75F-05BD-4739-8C1B-021A9E8D4B49}.Release|Any CPU.Build.0 = Release|Any CPU
+		{256B62B3-03F4-44C6-B186-A6E7146FCBDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{256B62B3-03F4-44C6-B186-A6E7146FCBDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{256B62B3-03F4-44C6-B186-A6E7146FCBDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{256B62B3-03F4-44C6-B186-A6E7146FCBDC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EBB17FED-F7DA-41FE-11D9-6C360133291D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBB17FED-F7DA-41FE-11D9-6C360133291D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBB17FED-F7DA-41FE-11D9-6C360133291D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBB17FED-F7DA-41FE-11D9-6C360133291D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90D542A9-9FFD-F017-24DB-9B8B829B889B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90D542A9-9FFD-F017-24DB-9B8B829B889B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90D542A9-9FFD-F017-24DB-9B8B829B889B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90D542A9-9FFD-F017-24DB-9B8B829B889B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52B0E121-4049-F31D-C73B-A0240A6C2C93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52B0E121-4049-F31D-C73B-A0240A6C2C93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52B0E121-4049-F31D-C73B-A0240A6C2C93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52B0E121-4049-F31D-C73B-A0240A6C2C93}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A6270B3-80B1-513E-4C41-05D3039D2854}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A6270B3-80B1-513E-4C41-05D3039D2854}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A6270B3-80B1-513E-4C41-05D3039D2854}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A6270B3-80B1-513E-4C41-05D3039D2854}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BC9A27AA-EE88-44B0-86BD-553F4716E26B} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{8B5AE75F-05BD-4739-8C1B-021A9E8D4B49} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{256B62B3-03F4-44C6-B186-A6E7146FCBDC} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E602877F-6246-47C7-B06F-8AF9EB5B6FBA}
+	EndGlobalSection
+EndGlobal

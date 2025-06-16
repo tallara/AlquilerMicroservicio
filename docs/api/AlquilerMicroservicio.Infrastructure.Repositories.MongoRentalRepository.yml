@@ -1,0 +1,838 @@
+### YamlMime:ManagedReference
+items:
+- uid: AlquilerMicroservicio.Infrastructure.Repositories.MongoRentalRepository
+  commentId: T:AlquilerMicroservicio.Infrastructure.Repositories.MongoRentalRepository
+  id: MongoRentalRepository
+  parent: AlquilerMicroservicio.Infrastructure.Repositories
+  children:
+  - AlquilerMicroservicio.Infrastructure.Repositories.MongoRentalRepository.#ctor(MongoDB.Driver.IMongoDatabase)
+  - AlquilerMicroservicio.Infrastructure.Repositories.MongoRentalRepository.AddAsync(AlquilerMicroservicio.Domain.Entities.Rental)
+  - AlquilerMicroservicio.Infrastructure.Repositories.MongoRentalRepository.GetActiveRentalByCustomerAsync(System.String)
+  - AlquilerMicroservicio.Infrastructure.Repositories.MongoRentalRepository.GetByIdAsync(System.Guid)
+  - AlquilerMicroservicio.Infrastructure.Repositories.MongoRentalRepository.UpdateAsync(AlquilerMicroservicio.Domain.Entities.Rental)
+  langs:
+  - csharp
+  - vb
+  name: MongoRentalRepository
+  nameWithType: MongoRentalRepository
+  fullName: AlquilerMicroservicio.Infrastructure.Repositories.MongoRentalRepository
+  type: Class
+  source:
+    id: MongoRentalRepository
+    path: C:\Users\Tallara\Desktop\AlquilerMicroservicio\AlquilerMicroservicio.Infrastructure\Repositories\MongoRentalRepository.cs
+    startLine: 9
+  assemblies:
+  - AlquilerMicroservicio.Infrastructure
+  namespace: AlquilerMicroservicio.Infrastructure.Repositories
+  summary: Implementación del repositorio de alquileres usando MongoDB como almacenamiento.
+  example: []
+  syntax:
+    content: 'public class MongoRentalRepository : IRentalRepository'
+    content.vb: Public Class MongoRentalRepository Implements IRentalRepository
+  inheritance:
+  - System.Object
+  implements:
+  - AlquilerMicroservicio.Domain.Interfaces.IRentalRepository
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: AlquilerMicroservicio.Infrastructure.Repositories.MongoRentalRepository.#ctor(MongoDB.Driver.IMongoDatabase)
+  commentId: M:AlquilerMicroservicio.Infrastructure.Repositories.MongoRentalRepository.#ctor(MongoDB.Driver.IMongoDatabase)
+  id: '#ctor(MongoDB.Driver.IMongoDatabase)'
+  parent: AlquilerMicroservicio.Infrastructure.Repositories.MongoRentalRepository
+  langs:
+  - csharp
+  - vb
+  name: MongoRentalRepository(IMongoDatabase)
+  nameWithType: MongoRentalRepository.MongoRentalRepository(IMongoDatabase)
+  fullName: AlquilerMicroservicio.Infrastructure.Repositories.MongoRentalRepository.MongoRentalRepository(MongoDB.Driver.IMongoDatabase)
+  type: Constructor
+  source:
+    id: .ctor
+    path: C:\Users\Tallara\Desktop\AlquilerMicroservicio\AlquilerMicroservicio.Infrastructure\Repositories\MongoRentalRepository.cs
+    startLine: 16
+  assemblies:
+  - AlquilerMicroservicio.Infrastructure
+  namespace: AlquilerMicroservicio.Infrastructure.Repositories
+  summary: Constructor que obtiene la colección de alquileres desde la base de datos MongoDB.
+  example: []
+  syntax:
+    content: public MongoRentalRepository(IMongoDatabase database)
+    parameters:
+    - id: database
+      type: MongoDB.Driver.IMongoDatabase
+    content.vb: Public Sub New(database As IMongoDatabase)
+  overload: AlquilerMicroservicio.Infrastructure.Repositories.MongoRentalRepository.#ctor*
+  nameWithType.vb: MongoRentalRepository.New(IMongoDatabase)
+  fullName.vb: AlquilerMicroservicio.Infrastructure.Repositories.MongoRentalRepository.New(MongoDB.Driver.IMongoDatabase)
+  name.vb: New(IMongoDatabase)
+- uid: AlquilerMicroservicio.Infrastructure.Repositories.MongoRentalRepository.AddAsync(AlquilerMicroservicio.Domain.Entities.Rental)
+  commentId: M:AlquilerMicroservicio.Infrastructure.Repositories.MongoRentalRepository.AddAsync(AlquilerMicroservicio.Domain.Entities.Rental)
+  id: AddAsync(AlquilerMicroservicio.Domain.Entities.Rental)
+  parent: AlquilerMicroservicio.Infrastructure.Repositories.MongoRentalRepository
+  langs:
+  - csharp
+  - vb
+  name: AddAsync(Rental)
+  nameWithType: MongoRentalRepository.AddAsync(Rental)
+  fullName: AlquilerMicroservicio.Infrastructure.Repositories.MongoRentalRepository.AddAsync(AlquilerMicroservicio.Domain.Entities.Rental)
+  type: Method
+  source:
+    id: AddAsync
+    path: C:\Users\Tallara\Desktop\AlquilerMicroservicio\AlquilerMicroservicio.Infrastructure\Repositories\MongoRentalRepository.cs
+    startLine: 24
+  assemblies:
+  - AlquilerMicroservicio.Infrastructure
+  namespace: AlquilerMicroservicio.Infrastructure.Repositories
+  summary: Inserta un nuevo alquiler en la base de datos.
+  example: []
+  syntax:
+    content: public Task AddAsync(Rental rental)
+    parameters:
+    - id: rental
+      type: AlquilerMicroservicio.Domain.Entities.Rental
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function AddAsync(rental As Rental) As Task
+  overload: AlquilerMicroservicio.Infrastructure.Repositories.MongoRentalRepository.AddAsync*
+  implements:
+  - AlquilerMicroservicio.Domain.Interfaces.IRentalRepository.AddAsync(AlquilerMicroservicio.Domain.Entities.Rental)
+- uid: AlquilerMicroservicio.Infrastructure.Repositories.MongoRentalRepository.GetActiveRentalByCustomerAsync(System.String)
+  commentId: M:AlquilerMicroservicio.Infrastructure.Repositories.MongoRentalRepository.GetActiveRentalByCustomerAsync(System.String)
+  id: GetActiveRentalByCustomerAsync(System.String)
+  parent: AlquilerMicroservicio.Infrastructure.Repositories.MongoRentalRepository
+  langs:
+  - csharp
+  - vb
+  name: GetActiveRentalByCustomerAsync(string)
+  nameWithType: MongoRentalRepository.GetActiveRentalByCustomerAsync(string)
+  fullName: AlquilerMicroservicio.Infrastructure.Repositories.MongoRentalRepository.GetActiveRentalByCustomerAsync(string)
+  type: Method
+  source:
+    id: GetActiveRentalByCustomerAsync
+    path: C:\Users\Tallara\Desktop\AlquilerMicroservicio\AlquilerMicroservicio.Infrastructure\Repositories\MongoRentalRepository.cs
+    startLine: 32
+  assemblies:
+  - AlquilerMicroservicio.Infrastructure
+  namespace: AlquilerMicroservicio.Infrastructure.Repositories
+  summary: Obtiene el alquiler activo de un cliente, si tiene alguno en curso.
+  example: []
+  syntax:
+    content: public Task<Rental?> GetActiveRentalByCustomerAsync(string customerId)
+    parameters:
+    - id: customerId
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task{AlquilerMicroservicio.Domain.Entities.Rental}
+    content.vb: Public Function GetActiveRentalByCustomerAsync(customerId As String) As Task(Of Rental)
+  overload: AlquilerMicroservicio.Infrastructure.Repositories.MongoRentalRepository.GetActiveRentalByCustomerAsync*
+  implements:
+  - AlquilerMicroservicio.Domain.Interfaces.IRentalRepository.GetActiveRentalByCustomerAsync(System.String)
+  nameWithType.vb: MongoRentalRepository.GetActiveRentalByCustomerAsync(String)
+  fullName.vb: AlquilerMicroservicio.Infrastructure.Repositories.MongoRentalRepository.GetActiveRentalByCustomerAsync(String)
+  name.vb: GetActiveRentalByCustomerAsync(String)
+- uid: AlquilerMicroservicio.Infrastructure.Repositories.MongoRentalRepository.GetByIdAsync(System.Guid)
+  commentId: M:AlquilerMicroservicio.Infrastructure.Repositories.MongoRentalRepository.GetByIdAsync(System.Guid)
+  id: GetByIdAsync(System.Guid)
+  parent: AlquilerMicroservicio.Infrastructure.Repositories.MongoRentalRepository
+  langs:
+  - csharp
+  - vb
+  name: GetByIdAsync(Guid)
+  nameWithType: MongoRentalRepository.GetByIdAsync(Guid)
+  fullName: AlquilerMicroservicio.Infrastructure.Repositories.MongoRentalRepository.GetByIdAsync(System.Guid)
+  type: Method
+  source:
+    id: GetByIdAsync
+    path: C:\Users\Tallara\Desktop\AlquilerMicroservicio\AlquilerMicroservicio.Infrastructure\Repositories\MongoRentalRepository.cs
+    startLine: 40
+  assemblies:
+  - AlquilerMicroservicio.Infrastructure
+  namespace: AlquilerMicroservicio.Infrastructure.Repositories
+  summary: Busca un alquiler por su identificador.
+  example: []
+  syntax:
+    content: public Task<Rental?> GetByIdAsync(Guid id)
+    parameters:
+    - id: id
+      type: System.Guid
+    return:
+      type: System.Threading.Tasks.Task{AlquilerMicroservicio.Domain.Entities.Rental}
+    content.vb: Public Function GetByIdAsync(id As Guid) As Task(Of Rental)
+  overload: AlquilerMicroservicio.Infrastructure.Repositories.MongoRentalRepository.GetByIdAsync*
+  implements:
+  - AlquilerMicroservicio.Domain.Interfaces.IRentalRepository.GetByIdAsync(System.Guid)
+- uid: AlquilerMicroservicio.Infrastructure.Repositories.MongoRentalRepository.UpdateAsync(AlquilerMicroservicio.Domain.Entities.Rental)
+  commentId: M:AlquilerMicroservicio.Infrastructure.Repositories.MongoRentalRepository.UpdateAsync(AlquilerMicroservicio.Domain.Entities.Rental)
+  id: UpdateAsync(AlquilerMicroservicio.Domain.Entities.Rental)
+  parent: AlquilerMicroservicio.Infrastructure.Repositories.MongoRentalRepository
+  langs:
+  - csharp
+  - vb
+  name: UpdateAsync(Rental)
+  nameWithType: MongoRentalRepository.UpdateAsync(Rental)
+  fullName: AlquilerMicroservicio.Infrastructure.Repositories.MongoRentalRepository.UpdateAsync(AlquilerMicroservicio.Domain.Entities.Rental)
+  type: Method
+  source:
+    id: UpdateAsync
+    path: C:\Users\Tallara\Desktop\AlquilerMicroservicio\AlquilerMicroservicio.Infrastructure\Repositories\MongoRentalRepository.cs
+    startLine: 48
+  assemblies:
+  - AlquilerMicroservicio.Infrastructure
+  namespace: AlquilerMicroservicio.Infrastructure.Repositories
+  summary: Reemplaza la información de un alquiler existente por una versión actualizada.
+  example: []
+  syntax:
+    content: public Task UpdateAsync(Rental rental)
+    parameters:
+    - id: rental
+      type: AlquilerMicroservicio.Domain.Entities.Rental
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function UpdateAsync(rental As Rental) As Task
+  overload: AlquilerMicroservicio.Infrastructure.Repositories.MongoRentalRepository.UpdateAsync*
+  implements:
+  - AlquilerMicroservicio.Domain.Interfaces.IRentalRepository.UpdateAsync(AlquilerMicroservicio.Domain.Entities.Rental)
+references:
+- uid: AlquilerMicroservicio.Infrastructure.Repositories
+  commentId: N:AlquilerMicroservicio.Infrastructure.Repositories
+  href: AlquilerMicroservicio.html
+  name: AlquilerMicroservicio.Infrastructure.Repositories
+  nameWithType: AlquilerMicroservicio.Infrastructure.Repositories
+  fullName: AlquilerMicroservicio.Infrastructure.Repositories
+  spec.csharp:
+  - uid: AlquilerMicroservicio
+    name: AlquilerMicroservicio
+    href: AlquilerMicroservicio.html
+  - name: .
+  - uid: AlquilerMicroservicio.Infrastructure
+    name: Infrastructure
+    href: AlquilerMicroservicio.Infrastructure.html
+  - name: .
+  - uid: AlquilerMicroservicio.Infrastructure.Repositories
+    name: Repositories
+    href: AlquilerMicroservicio.Infrastructure.Repositories.html
+  spec.vb:
+  - uid: AlquilerMicroservicio
+    name: AlquilerMicroservicio
+    href: AlquilerMicroservicio.html
+  - name: .
+  - uid: AlquilerMicroservicio.Infrastructure
+    name: Infrastructure
+    href: AlquilerMicroservicio.Infrastructure.html
+  - name: .
+  - uid: AlquilerMicroservicio.Infrastructure.Repositories
+    name: Repositories
+    href: AlquilerMicroservicio.Infrastructure.Repositories.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: AlquilerMicroservicio.Domain.Interfaces.IRentalRepository
+  commentId: T:AlquilerMicroservicio.Domain.Interfaces.IRentalRepository
+  parent: AlquilerMicroservicio.Domain.Interfaces
+  href: AlquilerMicroservicio.Domain.Interfaces.IRentalRepository.html
+  name: IRentalRepository
+  nameWithType: IRentalRepository
+  fullName: AlquilerMicroservicio.Domain.Interfaces.IRentalRepository
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: AlquilerMicroservicio.Domain.Interfaces
+  commentId: N:AlquilerMicroservicio.Domain.Interfaces
+  href: AlquilerMicroservicio.html
+  name: AlquilerMicroservicio.Domain.Interfaces
+  nameWithType: AlquilerMicroservicio.Domain.Interfaces
+  fullName: AlquilerMicroservicio.Domain.Interfaces
+  spec.csharp:
+  - uid: AlquilerMicroservicio
+    name: AlquilerMicroservicio
+    href: AlquilerMicroservicio.html
+  - name: .
+  - uid: AlquilerMicroservicio.Domain
+    name: Domain
+    href: AlquilerMicroservicio.Domain.html
+  - name: .
+  - uid: AlquilerMicroservicio.Domain.Interfaces
+    name: Interfaces
+    href: AlquilerMicroservicio.Domain.Interfaces.html
+  spec.vb:
+  - uid: AlquilerMicroservicio
+    name: AlquilerMicroservicio
+    href: AlquilerMicroservicio.html
+  - name: .
+  - uid: AlquilerMicroservicio.Domain
+    name: Domain
+    href: AlquilerMicroservicio.Domain.html
+  - name: .
+  - uid: AlquilerMicroservicio.Domain.Interfaces
+    name: Interfaces
+    href: AlquilerMicroservicio.Domain.Interfaces.html
+- uid: AlquilerMicroservicio.Infrastructure.Repositories.MongoRentalRepository.#ctor*
+  commentId: Overload:AlquilerMicroservicio.Infrastructure.Repositories.MongoRentalRepository.#ctor
+  href: AlquilerMicroservicio.Infrastructure.Repositories.MongoRentalRepository.html#AlquilerMicroservicio_Infrastructure_Repositories_MongoRentalRepository__ctor_MongoDB_Driver_IMongoDatabase_
+  name: MongoRentalRepository
+  nameWithType: MongoRentalRepository.MongoRentalRepository
+  fullName: AlquilerMicroservicio.Infrastructure.Repositories.MongoRentalRepository.MongoRentalRepository
+  nameWithType.vb: MongoRentalRepository.New
+  fullName.vb: AlquilerMicroservicio.Infrastructure.Repositories.MongoRentalRepository.New
+  name.vb: New
+- uid: MongoDB.Driver.IMongoDatabase
+  commentId: T:MongoDB.Driver.IMongoDatabase
+  parent: MongoDB.Driver
+  isExternal: true
+  name: IMongoDatabase
+  nameWithType: IMongoDatabase
+  fullName: MongoDB.Driver.IMongoDatabase
+- uid: MongoDB.Driver
+  commentId: N:MongoDB.Driver
+  isExternal: true
+  name: MongoDB.Driver
+  nameWithType: MongoDB.Driver
+  fullName: MongoDB.Driver
+  spec.csharp:
+  - uid: MongoDB
+    name: MongoDB
+    isExternal: true
+  - name: .
+  - uid: MongoDB.Driver
+    name: Driver
+    isExternal: true
+  spec.vb:
+  - uid: MongoDB
+    name: MongoDB
+    isExternal: true
+  - name: .
+  - uid: MongoDB.Driver
+    name: Driver
+    isExternal: true
+- uid: AlquilerMicroservicio.Infrastructure.Repositories.MongoRentalRepository.AddAsync*
+  commentId: Overload:AlquilerMicroservicio.Infrastructure.Repositories.MongoRentalRepository.AddAsync
+  href: AlquilerMicroservicio.Infrastructure.Repositories.MongoRentalRepository.html#AlquilerMicroservicio_Infrastructure_Repositories_MongoRentalRepository_AddAsync_AlquilerMicroservicio_Domain_Entities_Rental_
+  name: AddAsync
+  nameWithType: MongoRentalRepository.AddAsync
+  fullName: AlquilerMicroservicio.Infrastructure.Repositories.MongoRentalRepository.AddAsync
+- uid: AlquilerMicroservicio.Domain.Interfaces.IRentalRepository.AddAsync(AlquilerMicroservicio.Domain.Entities.Rental)
+  commentId: M:AlquilerMicroservicio.Domain.Interfaces.IRentalRepository.AddAsync(AlquilerMicroservicio.Domain.Entities.Rental)
+  parent: AlquilerMicroservicio.Domain.Interfaces.IRentalRepository
+  href: AlquilerMicroservicio.Domain.Interfaces.IRentalRepository.html#AlquilerMicroservicio_Domain_Interfaces_IRentalRepository_AddAsync_AlquilerMicroservicio_Domain_Entities_Rental_
+  name: AddAsync(Rental)
+  nameWithType: IRentalRepository.AddAsync(Rental)
+  fullName: AlquilerMicroservicio.Domain.Interfaces.IRentalRepository.AddAsync(AlquilerMicroservicio.Domain.Entities.Rental)
+  spec.csharp:
+  - uid: AlquilerMicroservicio.Domain.Interfaces.IRentalRepository.AddAsync(AlquilerMicroservicio.Domain.Entities.Rental)
+    name: AddAsync
+    href: AlquilerMicroservicio.Domain.Interfaces.IRentalRepository.html#AlquilerMicroservicio_Domain_Interfaces_IRentalRepository_AddAsync_AlquilerMicroservicio_Domain_Entities_Rental_
+  - name: (
+  - uid: AlquilerMicroservicio.Domain.Entities.Rental
+    name: Rental
+    href: AlquilerMicroservicio.Domain.Entities.Rental.html
+  - name: )
+  spec.vb:
+  - uid: AlquilerMicroservicio.Domain.Interfaces.IRentalRepository.AddAsync(AlquilerMicroservicio.Domain.Entities.Rental)
+    name: AddAsync
+    href: AlquilerMicroservicio.Domain.Interfaces.IRentalRepository.html#AlquilerMicroservicio_Domain_Interfaces_IRentalRepository_AddAsync_AlquilerMicroservicio_Domain_Entities_Rental_
+  - name: (
+  - uid: AlquilerMicroservicio.Domain.Entities.Rental
+    name: Rental
+    href: AlquilerMicroservicio.Domain.Entities.Rental.html
+  - name: )
+- uid: AlquilerMicroservicio.Domain.Entities.Rental
+  commentId: T:AlquilerMicroservicio.Domain.Entities.Rental
+  parent: AlquilerMicroservicio.Domain.Entities
+  href: AlquilerMicroservicio.Domain.Entities.Rental.html
+  name: Rental
+  nameWithType: Rental
+  fullName: AlquilerMicroservicio.Domain.Entities.Rental
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: AlquilerMicroservicio.Domain.Entities
+  commentId: N:AlquilerMicroservicio.Domain.Entities
+  href: AlquilerMicroservicio.html
+  name: AlquilerMicroservicio.Domain.Entities
+  nameWithType: AlquilerMicroservicio.Domain.Entities
+  fullName: AlquilerMicroservicio.Domain.Entities
+  spec.csharp:
+  - uid: AlquilerMicroservicio
+    name: AlquilerMicroservicio
+    href: AlquilerMicroservicio.html
+  - name: .
+  - uid: AlquilerMicroservicio.Domain
+    name: Domain
+    href: AlquilerMicroservicio.Domain.html
+  - name: .
+  - uid: AlquilerMicroservicio.Domain.Entities
+    name: Entities
+    href: AlquilerMicroservicio.Domain.Entities.html
+  spec.vb:
+  - uid: AlquilerMicroservicio
+    name: AlquilerMicroservicio
+    href: AlquilerMicroservicio.html
+  - name: .
+  - uid: AlquilerMicroservicio.Domain
+    name: Domain
+    href: AlquilerMicroservicio.Domain.html
+  - name: .
+  - uid: AlquilerMicroservicio.Domain.Entities
+    name: Entities
+    href: AlquilerMicroservicio.Domain.Entities.html
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: AlquilerMicroservicio.Infrastructure.Repositories.MongoRentalRepository.GetActiveRentalByCustomerAsync*
+  commentId: Overload:AlquilerMicroservicio.Infrastructure.Repositories.MongoRentalRepository.GetActiveRentalByCustomerAsync
+  href: AlquilerMicroservicio.Infrastructure.Repositories.MongoRentalRepository.html#AlquilerMicroservicio_Infrastructure_Repositories_MongoRentalRepository_GetActiveRentalByCustomerAsync_System_String_
+  name: GetActiveRentalByCustomerAsync
+  nameWithType: MongoRentalRepository.GetActiveRentalByCustomerAsync
+  fullName: AlquilerMicroservicio.Infrastructure.Repositories.MongoRentalRepository.GetActiveRentalByCustomerAsync
+- uid: AlquilerMicroservicio.Domain.Interfaces.IRentalRepository.GetActiveRentalByCustomerAsync(System.String)
+  commentId: M:AlquilerMicroservicio.Domain.Interfaces.IRentalRepository.GetActiveRentalByCustomerAsync(System.String)
+  parent: AlquilerMicroservicio.Domain.Interfaces.IRentalRepository
+  isExternal: true
+  href: AlquilerMicroservicio.Domain.Interfaces.IRentalRepository.html#AlquilerMicroservicio_Domain_Interfaces_IRentalRepository_GetActiveRentalByCustomerAsync_System_String_
+  name: GetActiveRentalByCustomerAsync(string)
+  nameWithType: IRentalRepository.GetActiveRentalByCustomerAsync(string)
+  fullName: AlquilerMicroservicio.Domain.Interfaces.IRentalRepository.GetActiveRentalByCustomerAsync(string)
+  nameWithType.vb: IRentalRepository.GetActiveRentalByCustomerAsync(String)
+  fullName.vb: AlquilerMicroservicio.Domain.Interfaces.IRentalRepository.GetActiveRentalByCustomerAsync(String)
+  name.vb: GetActiveRentalByCustomerAsync(String)
+  spec.csharp:
+  - uid: AlquilerMicroservicio.Domain.Interfaces.IRentalRepository.GetActiveRentalByCustomerAsync(System.String)
+    name: GetActiveRentalByCustomerAsync
+    href: AlquilerMicroservicio.Domain.Interfaces.IRentalRepository.html#AlquilerMicroservicio_Domain_Interfaces_IRentalRepository_GetActiveRentalByCustomerAsync_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: AlquilerMicroservicio.Domain.Interfaces.IRentalRepository.GetActiveRentalByCustomerAsync(System.String)
+    name: GetActiveRentalByCustomerAsync
+    href: AlquilerMicroservicio.Domain.Interfaces.IRentalRepository.html#AlquilerMicroservicio_Domain_Interfaces_IRentalRepository_GetActiveRentalByCustomerAsync_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Threading.Tasks.Task{AlquilerMicroservicio.Domain.Entities.Rental}
+  commentId: T:System.Threading.Tasks.Task{AlquilerMicroservicio.Domain.Entities.Rental}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<Rental>
+  nameWithType: Task<Rental>
+  fullName: System.Threading.Tasks.Task<AlquilerMicroservicio.Domain.Entities.Rental>
+  nameWithType.vb: Task(Of Rental)
+  fullName.vb: System.Threading.Tasks.Task(Of AlquilerMicroservicio.Domain.Entities.Rental)
+  name.vb: Task(Of Rental)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: AlquilerMicroservicio.Domain.Entities.Rental
+    name: Rental
+    href: AlquilerMicroservicio.Domain.Entities.Rental.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: AlquilerMicroservicio.Domain.Entities.Rental
+    name: Rental
+    href: AlquilerMicroservicio.Domain.Entities.Rental.html
+  - name: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: AlquilerMicroservicio.Infrastructure.Repositories.MongoRentalRepository.GetByIdAsync*
+  commentId: Overload:AlquilerMicroservicio.Infrastructure.Repositories.MongoRentalRepository.GetByIdAsync
+  href: AlquilerMicroservicio.Infrastructure.Repositories.MongoRentalRepository.html#AlquilerMicroservicio_Infrastructure_Repositories_MongoRentalRepository_GetByIdAsync_System_Guid_
+  name: GetByIdAsync
+  nameWithType: MongoRentalRepository.GetByIdAsync
+  fullName: AlquilerMicroservicio.Infrastructure.Repositories.MongoRentalRepository.GetByIdAsync
+- uid: AlquilerMicroservicio.Domain.Interfaces.IRentalRepository.GetByIdAsync(System.Guid)
+  commentId: M:AlquilerMicroservicio.Domain.Interfaces.IRentalRepository.GetByIdAsync(System.Guid)
+  parent: AlquilerMicroservicio.Domain.Interfaces.IRentalRepository
+  isExternal: true
+  href: AlquilerMicroservicio.Domain.Interfaces.IRentalRepository.html#AlquilerMicroservicio_Domain_Interfaces_IRentalRepository_GetByIdAsync_System_Guid_
+  name: GetByIdAsync(Guid)
+  nameWithType: IRentalRepository.GetByIdAsync(Guid)
+  fullName: AlquilerMicroservicio.Domain.Interfaces.IRentalRepository.GetByIdAsync(System.Guid)
+  spec.csharp:
+  - uid: AlquilerMicroservicio.Domain.Interfaces.IRentalRepository.GetByIdAsync(System.Guid)
+    name: GetByIdAsync
+    href: AlquilerMicroservicio.Domain.Interfaces.IRentalRepository.html#AlquilerMicroservicio_Domain_Interfaces_IRentalRepository_GetByIdAsync_System_Guid_
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+  spec.vb:
+  - uid: AlquilerMicroservicio.Domain.Interfaces.IRentalRepository.GetByIdAsync(System.Guid)
+    name: GetByIdAsync
+    href: AlquilerMicroservicio.Domain.Interfaces.IRentalRepository.html#AlquilerMicroservicio_Domain_Interfaces_IRentalRepository_GetByIdAsync_System_Guid_
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: AlquilerMicroservicio.Infrastructure.Repositories.MongoRentalRepository.UpdateAsync*
+  commentId: Overload:AlquilerMicroservicio.Infrastructure.Repositories.MongoRentalRepository.UpdateAsync
+  href: AlquilerMicroservicio.Infrastructure.Repositories.MongoRentalRepository.html#AlquilerMicroservicio_Infrastructure_Repositories_MongoRentalRepository_UpdateAsync_AlquilerMicroservicio_Domain_Entities_Rental_
+  name: UpdateAsync
+  nameWithType: MongoRentalRepository.UpdateAsync
+  fullName: AlquilerMicroservicio.Infrastructure.Repositories.MongoRentalRepository.UpdateAsync
+- uid: AlquilerMicroservicio.Domain.Interfaces.IRentalRepository.UpdateAsync(AlquilerMicroservicio.Domain.Entities.Rental)
+  commentId: M:AlquilerMicroservicio.Domain.Interfaces.IRentalRepository.UpdateAsync(AlquilerMicroservicio.Domain.Entities.Rental)
+  parent: AlquilerMicroservicio.Domain.Interfaces.IRentalRepository
+  href: AlquilerMicroservicio.Domain.Interfaces.IRentalRepository.html#AlquilerMicroservicio_Domain_Interfaces_IRentalRepository_UpdateAsync_AlquilerMicroservicio_Domain_Entities_Rental_
+  name: UpdateAsync(Rental)
+  nameWithType: IRentalRepository.UpdateAsync(Rental)
+  fullName: AlquilerMicroservicio.Domain.Interfaces.IRentalRepository.UpdateAsync(AlquilerMicroservicio.Domain.Entities.Rental)
+  spec.csharp:
+  - uid: AlquilerMicroservicio.Domain.Interfaces.IRentalRepository.UpdateAsync(AlquilerMicroservicio.Domain.Entities.Rental)
+    name: UpdateAsync
+    href: AlquilerMicroservicio.Domain.Interfaces.IRentalRepository.html#AlquilerMicroservicio_Domain_Interfaces_IRentalRepository_UpdateAsync_AlquilerMicroservicio_Domain_Entities_Rental_
+  - name: (
+  - uid: AlquilerMicroservicio.Domain.Entities.Rental
+    name: Rental
+    href: AlquilerMicroservicio.Domain.Entities.Rental.html
+  - name: )
+  spec.vb:
+  - uid: AlquilerMicroservicio.Domain.Interfaces.IRentalRepository.UpdateAsync(AlquilerMicroservicio.Domain.Entities.Rental)
+    name: UpdateAsync
+    href: AlquilerMicroservicio.Domain.Interfaces.IRentalRepository.html#AlquilerMicroservicio_Domain_Interfaces_IRentalRepository_UpdateAsync_AlquilerMicroservicio_Domain_Entities_Rental_
+  - name: (
+  - uid: AlquilerMicroservicio.Domain.Entities.Rental
+    name: Rental
+    href: AlquilerMicroservicio.Domain.Entities.Rental.html
+  - name: )

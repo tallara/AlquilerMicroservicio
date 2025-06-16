@@ -1,0 +1,746 @@
+### YamlMime:ManagedReference
+items:
+- uid: AlquilerMicroservicio.Application.Handlers.CreateVehicleCommandHandler
+  commentId: T:AlquilerMicroservicio.Application.Handlers.CreateVehicleCommandHandler
+  id: CreateVehicleCommandHandler
+  parent: AlquilerMicroservicio.Application.Handlers
+  children:
+  - AlquilerMicroservicio.Application.Handlers.CreateVehicleCommandHandler.#ctor(AlquilerMicroservicio.Domain.Interfaces.IVehicleRepository)
+  - AlquilerMicroservicio.Application.Handlers.CreateVehicleCommandHandler.Handle(AlquilerMicroservicio.Application.Commands.CreateVehicleCommand,System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: CreateVehicleCommandHandler
+  nameWithType: CreateVehicleCommandHandler
+  fullName: AlquilerMicroservicio.Application.Handlers.CreateVehicleCommandHandler
+  type: Class
+  source:
+    id: CreateVehicleCommandHandler
+    path: C:\Users\Tallara\Desktop\AlquilerMicroservicio\AlquilerMicroservicio.Application\Handlers\CreateVehicleCommandHandler.cs
+    startLine: 10
+  assemblies:
+  - AlquilerMicroservicio.Application
+  namespace: AlquilerMicroservicio.Application.Handlers
+  summary: Handler que se encarga de registrar un vehículo nuevo. Lo mete en el repo y a otra cosa.
+  example: []
+  syntax:
+    content: 'public class CreateVehicleCommandHandler : IRequestHandler<CreateVehicleCommand, Unit>'
+    content.vb: Public Class CreateVehicleCommandHandler Implements IRequestHandler(Of CreateVehicleCommand, Unit)
+  inheritance:
+  - System.Object
+  implements:
+  - MediatR.IRequestHandler{AlquilerMicroservicio.Application.Commands.CreateVehicleCommand,MediatR.Unit}
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: AlquilerMicroservicio.Application.Handlers.CreateVehicleCommandHandler.#ctor(AlquilerMicroservicio.Domain.Interfaces.IVehicleRepository)
+  commentId: M:AlquilerMicroservicio.Application.Handlers.CreateVehicleCommandHandler.#ctor(AlquilerMicroservicio.Domain.Interfaces.IVehicleRepository)
+  id: '#ctor(AlquilerMicroservicio.Domain.Interfaces.IVehicleRepository)'
+  parent: AlquilerMicroservicio.Application.Handlers.CreateVehicleCommandHandler
+  langs:
+  - csharp
+  - vb
+  name: CreateVehicleCommandHandler(IVehicleRepository)
+  nameWithType: CreateVehicleCommandHandler.CreateVehicleCommandHandler(IVehicleRepository)
+  fullName: AlquilerMicroservicio.Application.Handlers.CreateVehicleCommandHandler.CreateVehicleCommandHandler(AlquilerMicroservicio.Domain.Interfaces.IVehicleRepository)
+  type: Constructor
+  source:
+    id: .ctor
+    path: C:\Users\Tallara\Desktop\AlquilerMicroservicio\AlquilerMicroservicio.Application\Handlers\CreateVehicleCommandHandler.cs
+    startLine: 17
+  assemblies:
+  - AlquilerMicroservicio.Application
+  namespace: AlquilerMicroservicio.Application.Handlers
+  summary: Se inyecta el repositorio de vehículos.
+  example: []
+  syntax:
+    content: public CreateVehicleCommandHandler(IVehicleRepository vehicleRepository)
+    parameters:
+    - id: vehicleRepository
+      type: AlquilerMicroservicio.Domain.Interfaces.IVehicleRepository
+    content.vb: Public Sub New(vehicleRepository As IVehicleRepository)
+  overload: AlquilerMicroservicio.Application.Handlers.CreateVehicleCommandHandler.#ctor*
+  nameWithType.vb: CreateVehicleCommandHandler.New(IVehicleRepository)
+  fullName.vb: AlquilerMicroservicio.Application.Handlers.CreateVehicleCommandHandler.New(AlquilerMicroservicio.Domain.Interfaces.IVehicleRepository)
+  name.vb: New(IVehicleRepository)
+- uid: AlquilerMicroservicio.Application.Handlers.CreateVehicleCommandHandler.Handle(AlquilerMicroservicio.Application.Commands.CreateVehicleCommand,System.Threading.CancellationToken)
+  commentId: M:AlquilerMicroservicio.Application.Handlers.CreateVehicleCommandHandler.Handle(AlquilerMicroservicio.Application.Commands.CreateVehicleCommand,System.Threading.CancellationToken)
+  id: Handle(AlquilerMicroservicio.Application.Commands.CreateVehicleCommand,System.Threading.CancellationToken)
+  parent: AlquilerMicroservicio.Application.Handlers.CreateVehicleCommandHandler
+  langs:
+  - csharp
+  - vb
+  name: Handle(CreateVehicleCommand, CancellationToken)
+  nameWithType: CreateVehicleCommandHandler.Handle(CreateVehicleCommand, CancellationToken)
+  fullName: AlquilerMicroservicio.Application.Handlers.CreateVehicleCommandHandler.Handle(AlquilerMicroservicio.Application.Commands.CreateVehicleCommand, System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: Handle
+    path: C:\Users\Tallara\Desktop\AlquilerMicroservicio\AlquilerMicroservicio.Application\Handlers\CreateVehicleCommandHandler.cs
+    startLine: 25
+  assemblies:
+  - AlquilerMicroservicio.Application
+  namespace: AlquilerMicroservicio.Application.Handlers
+  summary: Procesa el comando para crear un vehículo. Lo construye y lo suelta en el repositorio.
+  example: []
+  syntax:
+    content: public Task<Unit> Handle(CreateVehicleCommand request, CancellationToken cancellationToken)
+    parameters:
+    - id: request
+      type: AlquilerMicroservicio.Application.Commands.CreateVehicleCommand
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{MediatR.Unit}
+    content.vb: Public Function Handle(request As CreateVehicleCommand, cancellationToken As CancellationToken) As Task(Of Unit)
+  overload: AlquilerMicroservicio.Application.Handlers.CreateVehicleCommandHandler.Handle*
+  implements:
+  - MediatR.IRequestHandler{AlquilerMicroservicio.Application.Commands.CreateVehicleCommand,MediatR.Unit}.Handle(AlquilerMicroservicio.Application.Commands.CreateVehicleCommand,System.Threading.CancellationToken)
+references:
+- uid: AlquilerMicroservicio.Application.Handlers
+  commentId: N:AlquilerMicroservicio.Application.Handlers
+  href: AlquilerMicroservicio.html
+  name: AlquilerMicroservicio.Application.Handlers
+  nameWithType: AlquilerMicroservicio.Application.Handlers
+  fullName: AlquilerMicroservicio.Application.Handlers
+  spec.csharp:
+  - uid: AlquilerMicroservicio
+    name: AlquilerMicroservicio
+    href: AlquilerMicroservicio.html
+  - name: .
+  - uid: AlquilerMicroservicio.Application
+    name: Application
+    href: AlquilerMicroservicio.Application.html
+  - name: .
+  - uid: AlquilerMicroservicio.Application.Handlers
+    name: Handlers
+    href: AlquilerMicroservicio.Application.Handlers.html
+  spec.vb:
+  - uid: AlquilerMicroservicio
+    name: AlquilerMicroservicio
+    href: AlquilerMicroservicio.html
+  - name: .
+  - uid: AlquilerMicroservicio.Application
+    name: Application
+    href: AlquilerMicroservicio.Application.html
+  - name: .
+  - uid: AlquilerMicroservicio.Application.Handlers
+    name: Handlers
+    href: AlquilerMicroservicio.Application.Handlers.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: MediatR.IRequestHandler{AlquilerMicroservicio.Application.Commands.CreateVehicleCommand,MediatR.Unit}
+  commentId: T:MediatR.IRequestHandler{AlquilerMicroservicio.Application.Commands.CreateVehicleCommand,MediatR.Unit}
+  parent: MediatR
+  definition: MediatR.IRequestHandler`2
+  href: AlquilerMicroservicio.Application.Commands.CreateVehicleCommand.html
+  name: IRequestHandler<CreateVehicleCommand, Unit>
+  nameWithType: IRequestHandler<CreateVehicleCommand, Unit>
+  fullName: MediatR.IRequestHandler<AlquilerMicroservicio.Application.Commands.CreateVehicleCommand, MediatR.Unit>
+  nameWithType.vb: IRequestHandler(Of CreateVehicleCommand, Unit)
+  fullName.vb: MediatR.IRequestHandler(Of AlquilerMicroservicio.Application.Commands.CreateVehicleCommand, MediatR.Unit)
+  name.vb: IRequestHandler(Of CreateVehicleCommand, Unit)
+  spec.csharp:
+  - uid: MediatR.IRequestHandler`2
+    name: IRequestHandler
+    isExternal: true
+  - name: <
+  - uid: AlquilerMicroservicio.Application.Commands.CreateVehicleCommand
+    name: CreateVehicleCommand
+    href: AlquilerMicroservicio.Application.Commands.CreateVehicleCommand.html
+  - name: ','
+  - name: " "
+  - uid: MediatR.Unit
+    name: Unit
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: MediatR.IRequestHandler`2
+    name: IRequestHandler
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: AlquilerMicroservicio.Application.Commands.CreateVehicleCommand
+    name: CreateVehicleCommand
+    href: AlquilerMicroservicio.Application.Commands.CreateVehicleCommand.html
+  - name: ','
+  - name: " "
+  - uid: MediatR.Unit
+    name: Unit
+    isExternal: true
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MediatR.IRequestHandler`2
+  commentId: T:MediatR.IRequestHandler`2
+  isExternal: true
+  name: IRequestHandler<TRequest, TResponse>
+  nameWithType: IRequestHandler<TRequest, TResponse>
+  fullName: MediatR.IRequestHandler<TRequest, TResponse>
+  nameWithType.vb: IRequestHandler(Of TRequest, TResponse)
+  fullName.vb: MediatR.IRequestHandler(Of TRequest, TResponse)
+  name.vb: IRequestHandler(Of TRequest, TResponse)
+  spec.csharp:
+  - uid: MediatR.IRequestHandler`2
+    name: IRequestHandler
+    isExternal: true
+  - name: <
+  - name: TRequest
+  - name: ','
+  - name: " "
+  - name: TResponse
+  - name: '>'
+  spec.vb:
+  - uid: MediatR.IRequestHandler`2
+    name: IRequestHandler
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TRequest
+  - name: ','
+  - name: " "
+  - name: TResponse
+  - name: )
+- uid: MediatR
+  commentId: N:MediatR
+  isExternal: true
+  name: MediatR
+  nameWithType: MediatR
+  fullName: MediatR
+- uid: AlquilerMicroservicio.Application.Handlers.CreateVehicleCommandHandler.#ctor*
+  commentId: Overload:AlquilerMicroservicio.Application.Handlers.CreateVehicleCommandHandler.#ctor
+  href: AlquilerMicroservicio.Application.Handlers.CreateVehicleCommandHandler.html#AlquilerMicroservicio_Application_Handlers_CreateVehicleCommandHandler__ctor_AlquilerMicroservicio_Domain_Interfaces_IVehicleRepository_
+  name: CreateVehicleCommandHandler
+  nameWithType: CreateVehicleCommandHandler.CreateVehicleCommandHandler
+  fullName: AlquilerMicroservicio.Application.Handlers.CreateVehicleCommandHandler.CreateVehicleCommandHandler
+  nameWithType.vb: CreateVehicleCommandHandler.New
+  fullName.vb: AlquilerMicroservicio.Application.Handlers.CreateVehicleCommandHandler.New
+  name.vb: New
+- uid: AlquilerMicroservicio.Domain.Interfaces.IVehicleRepository
+  commentId: T:AlquilerMicroservicio.Domain.Interfaces.IVehicleRepository
+  parent: AlquilerMicroservicio.Domain.Interfaces
+  href: AlquilerMicroservicio.Domain.Interfaces.IVehicleRepository.html
+  name: IVehicleRepository
+  nameWithType: IVehicleRepository
+  fullName: AlquilerMicroservicio.Domain.Interfaces.IVehicleRepository
+- uid: AlquilerMicroservicio.Domain.Interfaces
+  commentId: N:AlquilerMicroservicio.Domain.Interfaces
+  href: AlquilerMicroservicio.html
+  name: AlquilerMicroservicio.Domain.Interfaces
+  nameWithType: AlquilerMicroservicio.Domain.Interfaces
+  fullName: AlquilerMicroservicio.Domain.Interfaces
+  spec.csharp:
+  - uid: AlquilerMicroservicio
+    name: AlquilerMicroservicio
+    href: AlquilerMicroservicio.html
+  - name: .
+  - uid: AlquilerMicroservicio.Domain
+    name: Domain
+    href: AlquilerMicroservicio.Domain.html
+  - name: .
+  - uid: AlquilerMicroservicio.Domain.Interfaces
+    name: Interfaces
+    href: AlquilerMicroservicio.Domain.Interfaces.html
+  spec.vb:
+  - uid: AlquilerMicroservicio
+    name: AlquilerMicroservicio
+    href: AlquilerMicroservicio.html
+  - name: .
+  - uid: AlquilerMicroservicio.Domain
+    name: Domain
+    href: AlquilerMicroservicio.Domain.html
+  - name: .
+  - uid: AlquilerMicroservicio.Domain.Interfaces
+    name: Interfaces
+    href: AlquilerMicroservicio.Domain.Interfaces.html
+- uid: AlquilerMicroservicio.Application.Handlers.CreateVehicleCommandHandler.Handle*
+  commentId: Overload:AlquilerMicroservicio.Application.Handlers.CreateVehicleCommandHandler.Handle
+  href: AlquilerMicroservicio.Application.Handlers.CreateVehicleCommandHandler.html#AlquilerMicroservicio_Application_Handlers_CreateVehicleCommandHandler_Handle_AlquilerMicroservicio_Application_Commands_CreateVehicleCommand_System_Threading_CancellationToken_
+  name: Handle
+  nameWithType: CreateVehicleCommandHandler.Handle
+  fullName: AlquilerMicroservicio.Application.Handlers.CreateVehicleCommandHandler.Handle
+- uid: MediatR.IRequestHandler{AlquilerMicroservicio.Application.Commands.CreateVehicleCommand,MediatR.Unit}.Handle(AlquilerMicroservicio.Application.Commands.CreateVehicleCommand,System.Threading.CancellationToken)
+  commentId: M:MediatR.IRequestHandler{AlquilerMicroservicio.Application.Commands.CreateVehicleCommand,MediatR.Unit}.Handle(AlquilerMicroservicio.Application.Commands.CreateVehicleCommand,System.Threading.CancellationToken)
+  parent: MediatR.IRequestHandler{AlquilerMicroservicio.Application.Commands.CreateVehicleCommand,MediatR.Unit}
+  definition: MediatR.IRequestHandler`2.Handle(`0,System.Threading.CancellationToken)
+  href: AlquilerMicroservicio.Application.Commands.CreateVehicleCommand.html
+  name: Handle(CreateVehicleCommand, CancellationToken)
+  nameWithType: IRequestHandler<CreateVehicleCommand, Unit>.Handle(CreateVehicleCommand, CancellationToken)
+  fullName: MediatR.IRequestHandler<AlquilerMicroservicio.Application.Commands.CreateVehicleCommand, MediatR.Unit>.Handle(AlquilerMicroservicio.Application.Commands.CreateVehicleCommand, System.Threading.CancellationToken)
+  nameWithType.vb: IRequestHandler(Of CreateVehicleCommand, Unit).Handle(CreateVehicleCommand, CancellationToken)
+  fullName.vb: MediatR.IRequestHandler(Of AlquilerMicroservicio.Application.Commands.CreateVehicleCommand, MediatR.Unit).Handle(AlquilerMicroservicio.Application.Commands.CreateVehicleCommand, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: MediatR.IRequestHandler{AlquilerMicroservicio.Application.Commands.CreateVehicleCommand,MediatR.Unit}.Handle(AlquilerMicroservicio.Application.Commands.CreateVehicleCommand,System.Threading.CancellationToken)
+    name: Handle
+    isExternal: true
+  - name: (
+  - uid: AlquilerMicroservicio.Application.Commands.CreateVehicleCommand
+    name: CreateVehicleCommand
+    href: AlquilerMicroservicio.Application.Commands.CreateVehicleCommand.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: MediatR.IRequestHandler{AlquilerMicroservicio.Application.Commands.CreateVehicleCommand,MediatR.Unit}.Handle(AlquilerMicroservicio.Application.Commands.CreateVehicleCommand,System.Threading.CancellationToken)
+    name: Handle
+    isExternal: true
+  - name: (
+  - uid: AlquilerMicroservicio.Application.Commands.CreateVehicleCommand
+    name: CreateVehicleCommand
+    href: AlquilerMicroservicio.Application.Commands.CreateVehicleCommand.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: AlquilerMicroservicio.Application.Commands.CreateVehicleCommand
+  commentId: T:AlquilerMicroservicio.Application.Commands.CreateVehicleCommand
+  parent: AlquilerMicroservicio.Application.Commands
+  href: AlquilerMicroservicio.Application.Commands.CreateVehicleCommand.html
+  name: CreateVehicleCommand
+  nameWithType: CreateVehicleCommand
+  fullName: AlquilerMicroservicio.Application.Commands.CreateVehicleCommand
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{MediatR.Unit}
+  commentId: T:System.Threading.Tasks.Task{MediatR.Unit}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<Unit>
+  nameWithType: Task<Unit>
+  fullName: System.Threading.Tasks.Task<MediatR.Unit>
+  nameWithType.vb: Task(Of Unit)
+  fullName.vb: System.Threading.Tasks.Task(Of MediatR.Unit)
+  name.vb: Task(Of Unit)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: MediatR.Unit
+    name: Unit
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: MediatR.Unit
+    name: Unit
+    isExternal: true
+  - name: )
+- uid: MediatR.IRequestHandler`2.Handle(`0,System.Threading.CancellationToken)
+  commentId: M:MediatR.IRequestHandler`2.Handle(`0,System.Threading.CancellationToken)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: Handle(TRequest, CancellationToken)
+  nameWithType: IRequestHandler<TRequest, TResponse>.Handle(TRequest, CancellationToken)
+  fullName: MediatR.IRequestHandler<TRequest, TResponse>.Handle(TRequest, System.Threading.CancellationToken)
+  nameWithType.vb: IRequestHandler(Of TRequest, TResponse).Handle(TRequest, CancellationToken)
+  fullName.vb: MediatR.IRequestHandler(Of TRequest, TResponse).Handle(TRequest, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: MediatR.IRequestHandler`2.Handle(`0,System.Threading.CancellationToken)
+    name: Handle
+    isExternal: true
+  - name: (
+  - name: TRequest
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: MediatR.IRequestHandler`2.Handle(`0,System.Threading.CancellationToken)
+    name: Handle
+    isExternal: true
+  - name: (
+  - name: TRequest
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: AlquilerMicroservicio.Application.Commands
+  commentId: N:AlquilerMicroservicio.Application.Commands
+  href: AlquilerMicroservicio.html
+  name: AlquilerMicroservicio.Application.Commands
+  nameWithType: AlquilerMicroservicio.Application.Commands
+  fullName: AlquilerMicroservicio.Application.Commands
+  spec.csharp:
+  - uid: AlquilerMicroservicio
+    name: AlquilerMicroservicio
+    href: AlquilerMicroservicio.html
+  - name: .
+  - uid: AlquilerMicroservicio.Application
+    name: Application
+    href: AlquilerMicroservicio.Application.html
+  - name: .
+  - uid: AlquilerMicroservicio.Application.Commands
+    name: Commands
+    href: AlquilerMicroservicio.Application.Commands.html
+  spec.vb:
+  - uid: AlquilerMicroservicio
+    name: AlquilerMicroservicio
+    href: AlquilerMicroservicio.html
+  - name: .
+  - uid: AlquilerMicroservicio.Application
+    name: Application
+    href: AlquilerMicroservicio.Application.html
+  - name: .
+  - uid: AlquilerMicroservicio.Application.Commands
+    name: Commands
+    href: AlquilerMicroservicio.Application.Commands.html
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
